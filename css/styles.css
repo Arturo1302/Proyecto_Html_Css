@@ -1,0 +1,130 @@
+/* ============================================
+  MENÚ DE NAVEGACIÓN
+   ============================================ */
+/* Contenedor del menú (centro de la barra) */
+.tabla_contenido {
+    flex: 1;                       /* Ocupa todo el espacio disponible */
+    display: flex;
+    justify-content: center;       /* Centra el menú horizontalmente */
+  }
+  
+  /* Lista de botones del menú */
+  .tabla_contenido ul {
+    display: flex;                 /* Organiza botones en horizontal */
+    flex-direction: row;           /* En fila */
+    gap: 15px;                     /* Espacio de 15px entre botones */
+    list-style: none;              /* Sin viñetas */
+    align-items: center;           /* Centra verticalmente */
+    margin: 0;                     /* Sin márgenes */
+    padding: 0;                    /* Sin espacio interno */
+  }
+  /* ============================================
+  CONTENEDOR PRINCIPAL
+   ============================================ */
+/* La caja grande que contiene toda la página */
+.container {
+    background-color: white;  /* Fondo blanco */
+    display: flex;                 /* Organiza elementos con flexbox */
+    flex-direction: column;        /* Elementos uno debajo del otro */
+    min-height: 100vh;             /* Altura mínima = toda la pantalla */
+  }
+/* ============================================
+  BARRA SUPERIOR (MENÚ)
+   ============================================ */
+
+.barra_superior {
+    position: fixed;               /* Fija en la parte superior */
+    z-index: 1000;                 /* Por encima de todo (número alto) */
+    color: black;
+    display: flex;                 /* Organiza elementos con flexbox */
+    flex-direction: row;           /* Elementos en horizontal */
+    align-items: center;           /* Centra verticalmente */
+    width: 100%;                   /* Ancho completo */
+    background-color: white;  /* Fondo azul oscuro */
+    padding: 0;                    /* Sin espacio interno */
+    justify-content: space-between;  /* Separa logo, menú y bandera */
+    height: 50px;                  /* Altura fija de 80px */
+    border-bottom: 2px solid orange/* Borde naranja abajo */
+  }
+  
+  /* Contenedor de logos */
+  .footer_superior {
+    display: flex;
+    justify-content: space-between;
+    width: 8%; /* Separa los íconos */
+    padding: 0 20px;  /* Espacio a los lados */
+    display: flex;
+    align-items: center;           /* Centra verticalmente */
+  }
+    
+/* ============================================
+  BOTONES
+   ============================================ */
+/* Estilo base de todos los botones del menú */
+.boton {
+  display: flex;                 /* Cambiado de inline-block a flex */
+  align-items: center;           /* Alinea icono y texto verticalmente */
+  margin: 10px;                  /* Espacio alrededor (10px) */
+  cursor: pointer;               /* Manita al pasar el mouse */
+  background-color: white;       /* Fondo blanco */
+  border-radius: 10px;           /* Esquinas redondeadas (10px) */
+  text-align: center;            /* Texto centrado */
+  transition: all 0.3s ease;     /* Animación suave */
+}
+
+/* Enlaces dentro de los botones */
+.boton a {
+  display: flex;                 /* Cambiado de block a flex */
+  align-items: center;           /* Alinea icono y texto verticalmente */
+  gap: 8px;                      /* Espacio entre icono y texto */
+  padding: 10px 20px;            /* Espacio interno */
+  color: black;                  /* Texto negro */
+  text-decoration: none;         /* Sin subrayado */
+  white-space: nowrap;           /* No se parte en dos líneas */
+  transition: color 0.3s ease;   /* Animación del color */
+  border-radius: 10px;           /* Esquinas redondeadas (10px) */
+}
+
+/* Iconos dentro de los botones */
+.boton img {
+  width: 15px;                   /* Ancho fijo */
+  height: 20px;                  /* Alto fijo */
+  flex-shrink: 0;                /* No se reduce */
+}
+
+/* Cuando pasas el mouse por un botón */
+.boton--hover:hover {
+  transform: scale(1.1);        /* Se agranda un 5% */
+  background-color: rgb(255, 255, 253); 
+  border-color: orange;    
+}
+
+/* Contenedor del logo de usuario */
+.footer_superior {
+  padding: 0 20px;  /* Espacio a los lados */
+  display: flex;
+  align-items: center;           /* Centra verticalmente */
+}
+
+ /* ===================================================================================================================  */
+/* ============================================
+  SECCIÓN DE TÍTULO
+   ============================================ */
+.seccion_titulo {
+    margin-top: 15px;              /* Espacio desde la barra fija */
+    text-align: center;            /* Centra el texto */
+    padding: 40px 20px 20px;       /* Espacio interno */
+}
+
+.seccion_titulo h1 {
+    font-size: 32px;               /* Tamaño grande del título */
+    font-weight: bold;             /* Texto en negrita */
+    color: black;                   /* Color gris oscuro */
+    margin-bottom: 15px;           /* Espacio abajo del título */
+}
+
+.seccion_titulo p {
+    font-size: 16px;               /* Tamaño del subtítulo */
+    color: #666;                   /* Color gris medio */
+    margin: 0;                     /* Sin márgenes */
+}
