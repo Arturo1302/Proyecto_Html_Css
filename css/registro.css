@@ -78,6 +78,19 @@ p{
     color: grey;
 }
 
-.usuario {
-    form
+input {
+    border: 1px solid gray;
+    border-radius: 12px ;
+    align-items:initial ;
+}
+
+.form-code {
+    margin-top: 4%;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-items: stretch;
+
 }
