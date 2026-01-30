@@ -9,23 +9,38 @@
     background: url("../media/pexels-pixabay-159400.png")no-repeat;
     align-items: center;
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes logo_animation {
     from {
-        opacity: 50%;
+        opacity: 100%;
     }
 
     to {
         opacity: 0%;
     }
+
 }
 
 .logo{
-    margin-left: 45vmax;
-    margin-top: 40vmin;
+    max-height: 150px;
+    
     animation: logo_animation;
-    animation-duration: 0.9s;
-    animation-iteration-count:calc(1);
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-delay: 0.7s;
+    animation-direction: alternate;
 }
 
+.login_container {
+    align-items: center;
+    position: absolute;
+}
+
+.formulario {
+    position: absolute;
+
+}
