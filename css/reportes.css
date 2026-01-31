@@ -1,0 +1,53 @@
+/* Formulario de reporte */
+.formulario-reporte {
+    width: 600px;
+    margin: 0px auto;
+    padding: 30px;
+    background-color:  rgba(170, 170, 170, 0.6);
+    border-radius: 12px;
+}
+
+/* Etiquetas */
+.formulario-reporte label {
+    display: block;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Inputs y textarea */
+.formulario-reporte input,
+.formulario-reporte textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: white;
+}
+
+/* Textarea más alto */
+.formulario-reporte textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Botón */
+.formulario-reporte button {
+    display: block;
+    width: 300px;
+    margin: 10px auto 0;
+    padding: 14px;
+    background: #ff7f50;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Hover del botón */
+.formulario-reporte button:hover {
+    background: #ff6a3d;
+}
