@@ -23,6 +23,11 @@
    ============================================ */
 /* La caja grande que contiene toda la página */
 .container {
+    background-image: url('../media/logo_opacidad_80.svg'); /* Ruta de tu imagen */
+    background-attachment: fixed;
+    background-size: 600px; /* La imagen cubre todo el espacio */
+    background-position: center ; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
     background-color: white;  /* Fondo blanco */
     display: flex;                 /* Organiza elementos con flexbox */
     flex-direction: column;        /* Elementos uno debajo del otro */
@@ -87,14 +92,14 @@
 
 /* Iconos dentro de los botones */
 .boton img {
-  width: 15px;                   /* Ancho fijo */
+  width: 20px;                   /* Ancho fijo */
   height: 20px;                  /* Alto fijo */
   flex-shrink: 0;                /* No se reduce */
 }
 
 /* Cuando pasas el mouse por un botón */
 .boton--hover:hover {
-  transform: scale(1.1);        /* Se agranda un 5% */
+  transform: scale(0.9);        /* Se agranda un 5% */
   background-color: rgb(255, 255, 253); 
   border-color: orange;    
 }
@@ -111,7 +116,7 @@
   SECCIÓN DE TÍTULO
    ============================================ */
 .seccion_titulo {
-    margin-top: 15px;              /* Espacio desde la barra fija */
+    margin-top: 10px;              /* Espacio desde la barra fija */
     text-align: center;            /* Centra el texto */
     padding: 40px 20px 20px;       /* Espacio interno */
 }
