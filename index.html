@@ -9,103 +9,109 @@
     <link rel="shortcut icon" href="./media/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="./media/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="./media/favicon/site.webmanifest" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/Panel-de-bienvenida.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- ============================================
-    CONTENEDOR PRINCIPAL
-    ============================================ -->
-    <!-- Esta caja grande contiene toda la página -->
-    <div class="container">
-        
-        <!-- ============================================
-        BARRA SUPERIOR (HEADER)
-        ============================================ -->
-        <!-- La barra azul oscura de arriba con el logo y menú -->
-        <header class="barra_superior">
-            
-            <!-- LOGO -->
-            <!-- El logo que aparece a la izquierda -->
-            <!-- <div class="logo">
-                <img src="/images/Logo.png" width="140" alt="Logo Peajes de Santander">
-            </div> -->
-            
-            <!-- MENÚ DE NAVEGACIÓN -->
-            <!-- Los botones del centro (Inicio, Tarifas, Ubicación, etc.) -->
-            <nav class="tabla_contenido">
-                <ul>
+<!-- ============================================-->
+<!--    PANEL DE BIENVENIDA CON ANIMACION-->
+<!-- ============================================-->
+     <!-- <div class="Panel-De-Bienvenida">   
+        <div class="background_img ">
+            <div class="welcome-panel-container">
+                <img class= "register_logo" src="./media/kario sin kairo.svg">
+                <h5> MEDIA</h5>
+                <h3 class="welcome-text-panel">Bienvenido de nuevo</h3>
+                <img class="photo-icon" src="./media/pp@2x.png">
+                <h3 class="welcome-text-panel">Pedro Felipe Gómez Bonilla</h3>
+                <p class="footer-welcome-panel">Usuario Administrador</p>
+            </div>  
+        </div>
+    </div>  -->
 
-                    <!-- Botón de Inicio - Te lleva al principio de esta página -->
-                    <li class="boton boton--hover">
-                        <a href="pages/Añadir.html">
-                            <img src="./media/Group 3.svg"  alt="Agregar">
-                            Añadir
-                        </a>
-                    </li>
-            
-                    <!-- Botón de Tarifas - Abre la página de tarifas -->
-                    <li class="boton boton--hover">
-                        <a href="#inicio">
-                            <img src="./media/Icon open-reload.svg"  alt="Refrescar">
-                            Refrescar
-                        </a>
-                    </li>
-        
-                    <!-- Botón de Ubicación - Baja a la sección de ubicaciones en esta página -->
-                    <li class="boton boton--hover">
-                        <a href="pages/Eliminar.html">
-                            <img src="./media/Icon material-delete-forever.svg"  alt="Eliminar">
-                            Eliminar
-                        </a>
-                    </li>
-                    <li class="boton boton--hover">
-                        <a href="#inicio">
-                            <img width="30px" src="./media/kario sin kairo.svg" alt="Inicio">
-                            
-                        </a>
-                    </li>
+<!-- ============================================-->
+<!--        CONTENEDOR PRINCIPAL-->
+<!--============================================ -->
+<!-- Esta caja grande contiene toda la página -->
+<header>  
+    <div class="container">      
+            <div class="barra_superior">
+                <nav class="tabla_contenido">
+                    <ul>
+                        <!-- Boton de Añadir -->
+                        <li class="boton boton--hover">
+                            <a href="pages/Añadir.html">
+                                <img src="./media/Group 3.svg"  alt="Agregar">
+                                Añadir
+                            </a>
+                        </li>
+                        <!-- Boton de refrescar -->
+                        <li class="boton boton--hover">
+                            <a href="#inicio">
+                                <img src="./media/Icon open-reload.svg"  alt="Refrescar">
+                                Refrescar
+                            </a>
+                        </li>
+                        <!-- Boton de eliminar -->
+                        <li class="boton boton--hover">
+                            <a href="pages/Eliminar.html">
+                                <img src="./media/Icon material-delete-forever.svg"  alt="Eliminar">
+                                Eliminar
+                            </a>
+                        </li>
+                        <!-- Boton con el logo de la empresa -->
+                        <li class="boton boton--hover">
+                            <a href="#inicio">
+                                <img width="30px" src="./media/kario sin kairo.svg" alt="Inicio">
+
+                            </a>
+                        </li>
+                        <!-- Boton de Reportar -->
+                        <li class="boton boton--hover">
+                            <a href="pages/Reportes.html">
+                                <img src="./media/Icon material-bug-report.svg"  alt="Reportar">
+                                Reportar
+                            </a>
+                        </li>
                     
-                    <!-- Botón Tu Ruta - Baja a la sección de planificación de rutas -->
-                    <li class="boton boton--hover">
-                        <a href="pages/Reportes.html">
-                            <img src="./media/Icon material-bug-report.svg"  alt="Reportar">
-                            Reportar
-                        </a>
-                    </li>
-            
-                    <!-- Botón de Atención al Usuario - Baja al formulario de contacto -->
-                    <li class="boton boton--hover">
-                        <a href="pages/Ayuda.html">
-                            <img src="./media/icono_pregunta.svg"  alt="Ayuda">
-                            Ayuda
-                        </a>
-                    </li>
-            
-                
-                </ul>
-            </nav>
-            
-            <!-- imagen profe -->
-            <!-- El logo que aparece a la derecha -->
-            <div class="footer_superior">
-                <li class="boton boton--hover">
-                <img src="./media/Icon ionic-ios-settings.svg" width="20"  alt="Buscar">
-                </li>
-                <li class="boton boton--hover">
-                <img src="./media/Icon material-notifications-active.svg" width="20"  alt="Notificaciones">
-                </li>
-                
-                <img src="./media/pp.png" width="40" alt="Perfil Usuario">
-                
-            </div> 
-        </header>
+                        <!-- Boton de ayuda -->
+                        <li class="boton boton--hover">
+                            <a href="pages/Ayuda.html">
+                                <img src="./media/icono_pregunta.svg"  alt="Ayuda">
+                                Ayuda
+                            </a>
+                        </li>
+                    </ul>
+                    
 
-<!-- ============================================
-SECCIÓN DE TÍTULO PRINCIPAL
-============================================ -->
-<section class="seccion_titulo">
-    <h1>Panel de Indicadores</h1>
-    <p>Aquí puedes visualizar los indicadores propuestos y añadidos por tu equipo de trabajo.</p>
-</section>
+                    <!-- Foto del usuario -->
+                    <!-- Logo de configuracion y notificaciones -->
+                    <div class="footer_superior">
+                        <li class="boton boton--hover">
+                        <img src="./media/Icon ionic-ios-settings.svg" width="20"  alt="Buscar">
+                        </li>
+                        <li class="boton boton--hover">
+                        <img src="./media/Icon material-notifications-active.svg" width="20"  alt="Notificaciones">
+                        </li>
+
+                        <img src="./media/pp.png" width="40" alt="Perfil Usuario">
+                    </div> 
+                </nav>
+                
+            </div>
+        <!--Titulo principal-->
+        <div class="principal-tittle">
+            <h1>Panel de Indicadores</h1>
+            <p>Aquí puedes visualizar los indicadores propuestos y añadidos por tu equipo de trabajo.</p>
+        </div>
+    </div>
+
+</header>
+</div>
+
 </body>
 </html>
