@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 @keyframes logo_animation {
@@ -27,7 +28,6 @@
 
 .logo{
     max-height: 150px;
-    
     animation: logo_animation;
     animation-duration: 0.5s;
     animation-iteration-count: 2;
@@ -45,52 +45,111 @@
     border-radius: 7%;
     display: flex;
     flex-direction: column;
+
+    animation: login-animation;
+    animation-duration: 0.5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
 }
 
-.formulario {
-    position: absolute;
-
-}
 
 .register_logo{
     margin-top: 4%;
     max-width: 10%;
+    
 }
 
 h5 {
     font-family: "Quicksand", sans-serif;
     font-optical-sizing:none;
     font-weight: 200;
-    letter-spacing:0.5ch;
+    letter-spacing:0.3ch;
 }
 
 h3 {
     margin-top: 2%;
-    max-width: 60%;
     text-align: center;
-    font-size: 2rem;
+    font-size: 160%;
     font-family: sans-serif;
     font-weight: 500;
+
 }
 
 p{
     margin-top: 2%;
     color: grey;
+    font-size: 75%;
+    font-family: "Roboto", sans-serif;
+
 }
 
-input {
+.input-form {
     border: 1px solid gray;
     border-radius: 12px ;
-    align-items:initial ;
+    box-sizing: border-box;
+    width: 250%;
+    height: 40%;
+
 }
 
 .form-code {
-    margin-top: 4%;
-    justify-content: start;
+    margin-top: 2%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    align-items: flex-start;
+    width: 80%;
+    margin-left: 8%;
+    font-family: "Quicksand", sans-serif; 
     flex-wrap: wrap;
-    align-items: stretch;
+}
+
+.text-forms {
+    font-size: medium;
+    margin-left: 4%;
+    color: rgb(43, 43, 43);
+    
+
+}
+
+.boton-container {
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+    height: 10%;
+    width: 50%;
+}
+.boton-login {
+    background-color: orangered;
+    height: 100%;
+    width: 70%;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    padding-top: 4%;
+    text-decoration-line: none;
+    font-family: "SN Pro", sans-serif;
+    font-weight: 400;
+}
+
+.footer-text {
+    font-size: 60%;
+    font-family: "SN Pro", sans-serif;
+    margin-top: 4%;
+}
+
+
+
+@keyframes login-animation {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        visibility: visible;
+        opacity: 100%;
+    }
 
 }

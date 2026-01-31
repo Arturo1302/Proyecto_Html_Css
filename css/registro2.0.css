@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+}
+.background_img {
+    width: 100vmax;
+    height: 100vmin;
+    background-size: cover;
+    background: url("../media/pexels-pixabay-159400.png")no-repeat;
+    align-items: center;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.register_logo{
+    margin-top: 4%;
+    max-width: 10%;
+    
+}
+
+h3 {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 160%;
+    font-family: sans-serif;
+    font-weight: 500;
+
+}
+
+h5 {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing:none;
+    font-weight: 200;
+    letter-spacing:0.3ch;
+}
+p{
+    margin-top: 2%;
+    color: grey;
+    font-size: 75%;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.footer-welcome-panel{
+    font-size: small;
+}
+
+.photo-icon {
+    margin-top: 3%;
+    height: 25%;
+}
+
+.welcome-text-panel {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+
+}
+
+.welcome-panel-container {
+    align-items: center;
+    position: absolute;
+    width: 40%;
+    height: 45%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7%;
+    display: flex;
+    flex-direction: column;
+
+    animation: welcome-panel;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+
+}
+
+@keyframes welcome-panel {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        visibility: visible;
+        opacity: 100%;
+    }
+
+}
