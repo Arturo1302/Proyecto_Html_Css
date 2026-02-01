@@ -12,14 +12,14 @@
     justify-content: center;
     align-items: center;
 
-    /* animation: background-welcome-panel;
-    animation-delay: 1s;
+    animation: background-welcome-panel;
+    animation-delay: 4s;
     animation-duration: 0.8s;
-    animation-fill-mode: forwards; */
+    animation-fill-mode: forwards; 
 
 }
 
-/* @keyframes background-welcome-panel {
+ @keyframes background-welcome-panel {
     from {
         visibility: visible;
         opacity: 100%;
@@ -33,7 +33,7 @@
         display: none;
     }
 
-} */
+} 
 
 .welcome-panel-container {
     align-items: center;
@@ -46,26 +46,22 @@
     flex-direction: column;
 
     animation: welcome-panel;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-fill-mode: forwards;
     animation-iteration-count: 2;
     animation-direction:alternate-reverse;
 
 
+
 }
 
+/*la verdad casi no consigo hacer esto, pero indica los tiempos de animacion,
+un poco mas tecnico, tiempos de pausa durante la animacion*/
+
 @keyframes welcome-panel {
-    from {
-        opacity: 100%;
-    }
-
-    to {
-        animation-play-state: paused 4s;
-        opacity: 0%;
-        pointer-events: none;
-        display: none;   /*nose miy bien pq pero importante*/
-    }
-
+    0%   { opacity: 100%; /*tambien se puede usar 1*/ }
+    80%  { opacity: 100%; } 
+    100% { opacity: 0%; /*tambien se puede usar 0*/  }
 }
 
 .logo{
@@ -75,6 +71,7 @@
     animation-iteration-count: 2;
     animation-delay: 2s;
     visibility: hidden;
+    animation-fill-mode:forwards;
     /*añadir hiden*/
 }
 
@@ -132,4 +129,3 @@ p{
     font-weight: 400;
 
 }
-

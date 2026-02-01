@@ -28,14 +28,15 @@
     flex-direction: column;
     min-height: 100vh;
 
-    /* animation: principal-page-animation;
-    animation-delay: 1s;
+    animation: principal-page-animation;
+    animation-delay: 5s;
     animation-duration: 0.8s;
     animation-fill-mode: forwards;
-    visibility: hidden; */
+    visibility: hidden; 
+    
 }
 
-/* @keyframes principal-page-animation {
+ @keyframes principal-page-animation {
     from {
         opacity: 0;
     }
@@ -43,8 +44,9 @@
     to {
         visibility:visible;
         opacity: 1;
+        display: block;
     }
-} */
+} 
 
 .barra_superior {
     z-index: 1000;
