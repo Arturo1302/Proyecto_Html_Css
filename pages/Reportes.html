@@ -9,104 +9,97 @@
     <link rel="shortcut icon" href="./media/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="./media/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="./media/favicon/site.webmanifest" />
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/reportes.css"
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/reportes.css">
 </head>
-<body>
-    <div class="container">
-        <header class="barra_superior">
-            <nav class="tabla_contenido">
-                <ul>
+<body> 
+        <div class="container">  
+            <header>   
+                <div class="barra_superior">
+                    <nav class="tabla_contenido">
+                        <ul>
+                            <!-- Boton de Añadir -->
+                            <li class="boton boton--hover">
+                                <a href="Añadir.html">
+                                    <img src="../media/Group 3.svg"  alt="Agregar">
+                                    Añadir
+                                </a>
+                            </li>
+                            <!-- Boton de refrescar -->
+                            <li class="boton boton--hover">
+                                <a href="#inicio">
+                                    <img src="../media/Icon open-reload.svg"  alt="Refrescar">
+                                    Refrescar
+                                </a>
+                            </li>
+                            <!-- Boton de eliminar -->
+                            <li class="boton boton--hover">
+                                <a href="Eliminar.html">
+                                    <img src="../media/Icon material-delete-forever.svg"  alt="Eliminar">
+                                    Eliminar
+                                </a>
+                            </li>
+                            <!-- Boton con el logo de la empresa -->
+                            <li class="boton--hover">
+                                    <img class="logo-middle" src="../media/kario sin kairo.svg" alt="Inicio">
+                            </li>
+                            <!-- Boton de Reportar -->
+                            <li class="boton boton--hover">
+                                <a href="Reportes.html">
+                                    <img src="../media/Icon material-bug-report.svg"  alt="Reportar">
+                                    Reportar
+                                </a>
+                            </li>
+                        
+                            <!-- Boton de ayuda -->
+                            <li class="boton boton--hover">
+                                <a href="Ayuda.html">
+                                    <img src="../media/icono_pregunta.svg"  alt="Ayuda">
+                                    Ayuda
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- Foto del usuario -->
+                        <!-- Logo de configuracion y notificaciones -->
+                        <div class="footer_superior">
+                            <div class="boton--hover">
+                            <img src="../media/Icon ionic-ios-settings.svg"   alt="Buscar">
+                            </div>
+                            <div class="boton--hover">
+                            <img src="../media/Icon material-notifications-active.svg" alt="Notificaciones">
+                            </div>
 
-                    <!-- Botón de Inicio - Te lleva al principio de esta página -->
-                    <li class="boton boton--hover">
-                        <a href="Añadir.html">
-                            <img src="../media/Group 3.svg"  alt="Agregar">
-                            Añadir
-                        </a>
-                    </li>
-            
-                    <!-- Botón de Tarifas - Abre la página de tarifas -->
-                    <li class="boton boton--hover">
-                        <a href="Reportes.html">
-                            <img src="../media/Icon open-reload.svg"  alt="Refrescar">
-                            Refrescar
-                        </a>
-                    </li>
-        
-                    <!-- Botón de Ubicación - Baja a la sección de ubicaciones en esta página -->
-                    <li class="boton boton--hover">
-                        <a href="Eliminar.html">
-                            <img src="../media/Icon material-delete-forever.svg"  alt="Eliminar">
-                            Eliminar
-                        </a>
-                    </li>
-                    <li class="boton boton--hover">
-                        <a href="/index.html">
-                            <img width="30px" src="../media/kario sin kairo.svg" alt="Inicio">
-                            
-                        </a>
-                    </li>
-                    
-                    <!-- Botón Tu Ruta - Baja a la sección de planificación de rutas -->
-                    <li class="boton boton--hover">
-                        <a href="Reportes.html">
-                            <img src="../media/Icon material-bug-report.svg"  alt="Reportar">
-                            Reportar
-                        </a>
-                    </li>
-            
-                    <!-- Botón de Atención al Usuario - Baja al formulario de contacto -->
-                    <li class="boton boton--hover">
-                        <a href="Ayuda.html">
-                            <img src="../media/icono_pregunta.svg"  alt="Ayuda">
-                            Ayuda
-                        </a>
-                    </li>
-            
+                            <img src="../media/pp.png" width="40" alt="Perfil Usuario">
+                        </div> 
+                    </nav>
+                </div>
+            </header> 
+                <!--CONTENEDOR DE TODO EL CUADRITO DE REPORTE-->
+                <div class="report-container">
+                    <section class="seccion_titulo">
+                        <h1>Reportes </h1> 
+                    </section>
+                    <!-- FORMULARIO DE REPORTE -->
+                    <section class="formulario-reporte">
+                        <form>
+                            <label>Nombre Completo :</label>
+                            <input type="text" required>
+                        
+                            <label>Correo:</label>
+                            <input type="email" required>
+                        
+                            <label>Celular:</label>
+                            <input type="tel" required>
+                        
+                            <label>Mensaje :</label>
+                            <textarea required></textarea>
+                        
+                            <button type="submit">Enviar Reporte</button>
+                        </form>
+                    </section>
                 
-                </ul>
-            </nav>
-            
-            <!-- imagen profe -->
-            <!-- El logo que aparece a la derecha -->
-            <div class="footer_superior">
-                <li class="boton boton--hover">
-                <img src="../media/Icon ionic-ios-settings.svg" width="20"  alt="Buscar">
-                </li>
-                <li class="boton boton--hover">
-                <img src="../media/Icon material-notifications-active.svg" width="20"  alt="Notificaciones">
-                </li>
-                <img src="../media/pp.png" width="40" alt="Perfil Usuario">
-                
-            </div> 
-        </header>
-
-        <section class="seccion_titulo">
-            <h1>Reportes </h1>
-            
-        </section>
-<!-- ====================================================================== -->
-        <!-- FORMULARIO DE REPORTE -->
-        <section class="formulario-reporte">
-            <form>
-                <label>Nombre Completo :</label>
-                <input type="text" required>
-
-                <label>Correo:</label>
-                <input type="email" required>
-
-                <label>Celular:</label>
-                <input type="tel" required>
-
-                <label>Mensaje :</label>
-                <textarea required></textarea>
-
-                <button type="submit">Enviar Reporte</button>
-            </form>
-        </section>
-    </div>
+                </div>
+        </div>
 </body>
 </html>
-</body>
 </html>
