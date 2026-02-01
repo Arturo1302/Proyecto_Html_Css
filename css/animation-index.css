@@ -1,0 +1,26 @@
+.container {
+    margin-top: 0.5rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    animation: principal-page-animation;
+    animation-delay: 5s;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    visibility: hidden; 
+    
+}
+
+ @keyframes principal-page-animation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        visibility:visible;
+        opacity: 1;
+        display: block;
+    }
+} 
