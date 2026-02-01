@@ -27,7 +27,24 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
+    /* animation: principal-page-animation;
+    animation-delay: 1s;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    visibility: hidden; */
 }
+
+/* @keyframes principal-page-animation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        visibility:visible;
+        opacity: 1;
+    }
+} */
 
 .barra_superior {
     z-index: 1000;

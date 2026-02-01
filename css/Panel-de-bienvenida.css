@@ -12,12 +12,87 @@
     justify-content: center;
     align-items: center;
 
+    /* animation: background-welcome-panel;
+    animation-delay: 1s;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards; */
+
 }
+
+/* @keyframes background-welcome-panel {
+    from {
+        visibility: visible;
+        opacity: 100%;
+    }
+
+    to {
+        visibility: hidden;
+        opacity: 0%;
+        pointer-events: none;
+        z-index: 10;
+        display: none;
+    }
+
+} */
+
+.welcome-panel-container {
+    align-items: center;
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7%;
+    display: flex;
+    flex-direction: column;
+
+    animation: welcome-panel;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+    animation-direction:alternate-reverse;
+
+
+}
+
+@keyframes welcome-panel {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        animation-play-state: paused 4s;
+        opacity: 0%;
+        pointer-events: none;
+        display: none;   /*nose miy bien pq pero importante*/
+    }
+
+}
+
+.logo{
+    max-height: 150px;
+    animation: logo-animation;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    animation-delay: 2s;
+    visibility: hidden;
+    /*añadir hiden*/
+}
+
+
 
 .register_logo{
     margin-top: 4%;
     max-width: 10%;
     
+}
+
+@keyframes logo-animation {
+
+    to {
+        visibility: visible;
+        opacity: 100%;
+    }
+
 }
 
 h3 {
@@ -58,31 +133,3 @@ p{
 
 }
 
-.welcome-panel-container {
-    align-items: center;
-    position: absolute;
-    width: 40%;
-    height: 50%;
-    background-color: rgb(255, 255, 255);
-    border-radius: 7%;
-    display: flex;
-    flex-direction: column;
-
-    animation: welcome-panel;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-    visibility: hidden;
-
-}
-
-@keyframes welcome-panel {
-    from {
-        opacity: 0%;
-    }
-
-    to {
-        visibility: visible;
-        opacity: 100%;
-    }
-
-}
