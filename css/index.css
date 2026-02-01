@@ -125,3 +125,13 @@
   color: black;
   margin-top: 1.5%;
 }
+
+.Principal-table{
+    height: 30%;
+    width: 60%;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+}
