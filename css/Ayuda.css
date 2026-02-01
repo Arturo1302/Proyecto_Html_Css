@@ -1,0 +1,73 @@
+/* Contenedor principal */
+.ayudas-container {
+    display: flex;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cuadros grises */
+.formulario-ayudas {
+    width: 50%;
+    padding: 30px;
+    background-color: rgba(217, 217, 217, 0.5);
+    border-radius: 12px;
+}
+
+/* Etiquetas */
+.formulario-ayudas label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* Inputs */
+.formulario-ayudas input,
+.formulario-ayudas textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: white;
+    box-sizing: border-box;
+}
+
+.formulario-ayudas textarea {
+    min-height: 100px;
+}
+
+/* Botón */
+.formulario-ayudas button {
+    width: 300px;
+    margin: 20px auto;
+    padding: 12px;
+    background: #ff6633;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    display: block;
+}
+
+/* Título */
+.seccion_titulo h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Info de contacto */
+.contacto-info {
+    text-align: center;
+}
+
+.contacto-info h2 {
+    margin-bottom: 20px;
+}
+.contacto-info ul {
+    margin-top: 40px;
+    list-style-type: none;
+    padding: 0;
+}
+.contacto-info ul li {
+    margin-bottom: 10px;
+}
