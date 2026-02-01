@@ -123,20 +123,26 @@
   font-weight: 200;
   font-size: 1.3rem;
   color: black;
-  margin-top: 1.5%;
+  margin-top: 1%;
 }
 
 .Principal-table{
-    display: flex;
-    align-items: center;
+    display: grid;
+    align-items: start;
     justify-content: center;
-    flex-direction: column;
+    grid-template-columns: auto auto;
+    /*aqui doy a entender que hay 2 columnas 
+    y gracias a eso puedo poner las imagenes al lado 
+    de la tabla*/  
+    gap: 0;
 }
 
 .Principal-table table {
     border-collapse: separate;
     border-spacing: 40px 10px;
+    text-align: center;
 }
+
 
 .three-lines-img {
     height: 25px;
@@ -147,7 +153,9 @@
     outline: 1px solid gray;
     border-radius: 15px;
     font-family: "SN Pro", sans-serif;
+    font-weight: 300;
 }   
+
 
 .table-tittle td {
     font-family: "SN Pro", sans-serif;
@@ -157,4 +165,36 @@
 .progress-icon {
     height: 45px;
     width: 45px;
+}
+
+.lines-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+
+}
+
+.lines-images div {
+    justify-content: end;
+    padding: 5px 0;
+    margin-top: 10%;
+}
+
+.boton-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.boton-login {
+    background-color: orangered;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 50px; /* Cambia height y width por padding osea, relativo al contenido*/
+    text-align: center;
+    text-decoration-line: none;
+    font-family: "SN Pro", sans-serif;
+    font-weight: 400;
 }
