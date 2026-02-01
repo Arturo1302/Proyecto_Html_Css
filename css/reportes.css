@@ -1,6 +1,6 @@
 /* Formulario de reporte */
 .formulario-reporte {
-    width: 600px;
+    width: 50%;
     margin: 0px auto;
     padding: 30px;
     background-color:  rgba(217, 217, 217, 0.5);
@@ -20,7 +20,7 @@
 .formulario-reporte input,
 .formulario-reporte textarea {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     border: none;
     border-radius: 6px;
     background: white;
@@ -29,15 +29,15 @@
 /* Textarea más alto */
 .formulario-reporte textarea {
     min-height: 120px;
-    resize: vertical;
+    resize: vertical; /
 }
 
 /* Botón */
 .formulario-reporte button {
     display: block;
     width: 300px;
-    margin: 10px auto 0;
-    padding: 14px;
+    margin: 10px auto ;
+    padding: 12px;
     background: #ff7f50;
     color: white;
     font-size: 18px;

@@ -30,11 +30,12 @@
     border: none;
     border-radius: 6px;
     background: white;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
 }
 
 .formulario-ayudas textarea {
     min-height: 100px;
+    resize: vertical;
 }
 
 /* Botón */
@@ -47,6 +48,9 @@
     border: none;
     border-radius: 6px;
     display: block;
+}
+.formulario-ayudas button:hover {
+    background: #e6552b;
 }
 
 /* Título */
