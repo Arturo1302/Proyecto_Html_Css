@@ -10,12 +10,10 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./media/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="./media/favicon/site.webmanifest" />
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/añadir.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,
-    300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-     rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body> 
     <div class="container">   
@@ -32,7 +30,7 @@
                         </li>
                         <!-- Boton de refrescar -->
                         <li class="boton boton--hover">
-                            <a href="#inicio">
+                            <a href="Anadir.html">
                                 <img src="../media/Icon open-reload.svg"  alt="Refrescar">
                                 Refrescar
                             </a>
@@ -46,7 +44,9 @@
                         </li>
                         <!-- Boton con el logo de la empresa -->
                         <li class="boton--hover">
+                            <a href="Principal.html">
                                 <img class="logo-middle" src="../media/kario sin kairo.svg" alt="Inicio">
+                            </a>
                         </li>
                         <!-- Boton de Reportar -->
                         <li class="boton boton--hover">
@@ -84,9 +84,51 @@
         </header>
 
         <section class="seccion_titulo">
-            <h1>añadir</h1>
+
+            <section class="tittle">
+                <h1>Añadir Indicadores </h1> 
+            </section>
+
+            <div class="add-container">
+                <section class="add-forms">
+                    <form>
+                        <div class="primera-fila">
+                                <label>Nuevo indicador:</label>
+                                <input id="nuevo-indicador"type="text" required>
+                            
+                                <label>Categoría: </label>
+                                <input id="categoria"type="text" required>
+                                 
+                                <label>Área: </label>
+                                <input id="area"type="text" required> 
+                            
+                                <label>Descripción:</label>
+                                <input id="descripcion" required>  
+                        </div>
+
+                        <div class ="fechas">
+                            <label>Fecha de Inicio</label>
+                            <input id="fecha-box" type="date" required>
+                            <label>Fecha de Finalizacion</label>
+                            <input id="fecha-box" type="date" required>
+                        </div>
+                        <div class ="tercerafila">
+                            <label>Formula</label>
+                            <input id="fecha-box" type="text" required>
+                            <label>Frecuencia</label>
+                            <input id="fecha-box" type="number" required>
+                            <label>Cumplimiento</label>
+                            <input id="fecha-box" type="text" required>
+                        </div>
+                    </form>
+                </section>
             
+            </div>
         </section>
+
+        <div class="boton-container">
+            <a href="Principal.html" class="boton-login">Finalizar</a>
+        </div>
     </div>
 </body>
 </html>
