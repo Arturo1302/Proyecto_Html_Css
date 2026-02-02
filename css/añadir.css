@@ -6,7 +6,7 @@
 
 .add-container {
     width: 90%;
-    background-color: rgba(217, 217, 217, 0.5);
+    background-color: rgba(217, 217, 217, 0.61);
     border-radius: 12px;
     margin: auto; 
     padding: 20px;
@@ -87,14 +87,14 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2%;
+    margin-top: 6%;
 }
 
 .boton-login {
     background-color: orangered;
     border-radius: 25px;
     color: white;
-    padding: 15px 50px; /* Cambia height y width por padding osea, relativo al contenido*/
+    padding: 15px 90px; /* Cambia height y width por padding osea, relativo al contenido*/
     text-align: center;
     text-decoration-line: none;
     font-family: "SN Pro", sans-serif;
