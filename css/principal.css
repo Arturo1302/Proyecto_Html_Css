@@ -101,11 +101,15 @@
     cursor: pointer;
 }
 
-
+.boton--hover {
+    transition: all 0.3s ease;
+}
 .boton--hover:hover {
     transform: scale(0.9);
     background-color: rgb(255, 255, 253);
     border-color: orange;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 
