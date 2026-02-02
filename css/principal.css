@@ -204,3 +204,233 @@
     font-family: "SN Pro", sans-serif;
     font-weight: 400;
 }
+/* =========================================================================== */
+
+/* ===== MEDIA QUERIES PARA RESPONSIVE ===== */
+
+/* Tablets grandes (menor a 1200px) */
+@media (max-width: 1200px) {
+    .tabla_contenido {
+        margin-left: 5%;
+    }
+    
+    .tabla_contenido ul {
+        gap: 2rem;
+    }
+    
+    .footer_superior {
+        width: 12%;
+    }
+}
+
+/* Tablets (menor a 1024px) */
+@media (max-width: 1024px) {
+    .tabla_contenido {
+        margin-left: 0;
+    }
+    
+    .tabla_contenido ul {
+        gap: 1.5rem;
+    }
+    
+    .boton a {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .boton img {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .Principal-table {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .lines-images {
+        display: none; /* Ocultar las líneas decorativas en tablets */
+    }
+    
+    .Principal-table table {
+        border-spacing: 20px 10px;
+    }
+}
+
+/* Móviles (menor a 768px) */
+@media (max-width: 768px) {
+    .barra_superior {
+        height: auto;
+        padding: 10px 0;
+        flex-wrap: wrap;
+    }
+    
+    .tabla_contenido {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .tabla_contenido ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 10px 5px;
+    }
+    
+    /* Ocultar texto de botones, solo mostrar iconos */
+    .boton a {
+        padding: 8px;
+        gap: 0;
+        font-size: 0; /* Oculta el texto */
+    }
+    
+    .boton img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    /* Logo central visible */
+    .logo-middle {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    
+    .footer_superior {
+        width: auto;
+        gap: 15px;
+        padding: 10px 15px;
+        margin-left: 0;
+        justify-content: center;
+    }
+    
+    .footer_superior img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    /* Títulos */
+    .principal-tittle {
+        margin-top: 100px; /* Espacio para navbar */
+        padding: 0 15px;
+    }
+    
+    .principal-tittle h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .principal-tittle p {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    /* Tabla principal */
+    .Principal-table {
+        padding: 0 10px;
+    }
+    
+    .Principal-table table {
+        border-spacing: 10px 8px;
+        font-size: 0.85rem;
+        width: 100%;
+    }
+    
+    .Border-designed {
+        padding: 8px 12px;
+    }
+    
+    .progress-icon {
+        height: 35px;
+        width: 35px;
+    }
+    
+    .three-lines-img {
+        height: 20px;
+        width: 20px;
+    }
+    
+    /* Botón login */
+    .boton-login {
+        padding: 12px 40px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Móviles pequeños (menor a 480px) */
+@media (max-width: 480px) {
+    .container {
+        margin-top: 0;
+    }
+    
+    .barra_superior {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .tabla_contenido ul {
+        gap: 0.3rem;
+    }
+    
+    .boton {
+        margin: 5px;
+    }
+    
+    .boton a {
+        padding: 6px;
+    }
+    
+    .boton img {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .logo-middle {
+        width: 35px !important;
+        height: 35px !important;
+    }
+    
+    .footer_superior {
+        margin-top: 5px;
+        gap: 10px;
+    }
+    
+    .principal-tittle h1 {
+        font-size: 1.3rem;
+    }
+    
+    .principal-tittle p {
+        font-size: 0.9rem;
+    }
+    
+    .Principal-table table {
+        border-spacing: 8px 5px;
+        font-size: 0.75rem;
+    }
+    
+    .Border-designed {
+        padding: 6px 10px;
+    }
+    
+    .progress-icon {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .boton-login {
+        padding: 10px 30px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Móviles muy pequeños (menor a 360px) */
+@media (max-width: 360px) {
+    .Principal-table table {
+        font-size: 0.7rem;
+        border-spacing: 5px 3px;
+    }
+    
+    .boton img {
+        width: 20px;
+        height: 20px;
+    }
+}
