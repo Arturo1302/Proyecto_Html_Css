@@ -1,5 +1,6 @@
 /* Contenedor principal */
 .ayudas-container {
+    font-family: "SN Pro", sans-serif;
     display: flex;
     gap: 30px;
     max-width: 1100px;
@@ -9,6 +10,7 @@
 
 /* Cuadros grises */
 .formulario-ayudas {
+    font-family: "SN Pro", sans-serif;
     width: 50%;
     padding: 30px;
     background-color: rgba(217, 217, 217, 0.5);
@@ -17,6 +19,7 @@
 
 /* Etiquetas */
 .formulario-ayudas label {
+    font-weight: bold;
     display: block;
     margin-top: 15px;
     margin-bottom: 5px;
@@ -40,6 +43,9 @@
 
 /* Botón */
 .formulario-ayudas button {
+    font-family: "SN Pro", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
     width: 300px;
     margin: 20px auto;
     padding: 12px;
@@ -55,16 +61,20 @@
 
 /* Título */
 .seccion_titulo h1 {
+    font-family: "SN Pro", sans-serif;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 /* Info de contacto */
 .contacto-info {
+    font-family: "SN Pro", sans-serif;
     text-align: center;
 }
 
 .contacto-info h2 {
+    font-family: "SN Pro", sans-serif;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 .contacto-info ul {
