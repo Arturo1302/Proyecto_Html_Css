@@ -40,8 +40,8 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    width: 40%;
-    height: 65%;
+    width: 30%;
+    height: 55%;
     background-color: white;
     border-radius: 7%;
     display: flex;
@@ -56,8 +56,9 @@
 
 
 .register_logo{
-    margin-top: 4%;
-    max-width: 10%;
+    margin-top: 1%;
+    width: 20%;
+    align-items: center;
     
 }
 
@@ -82,15 +83,20 @@ label{
     color: black;
     font-size: medium;
     font-family: "Roboto", sans-serif;
-    font-weight: bold;
-
+}
+p {
+    margin-top: 2%;
+    font-size: medium;
+    text-align: center;
+    width: 80%;
+    font-family: "SN Pro", sans-serif;
 }
 
 .input-form {
     border: 1px solid gray;
     border-radius: 12px ;
     box-sizing: border-box;
-    width: 100%;
+    width: 50vh;
     height: 42px;
     padding: 0 12px;
 
@@ -125,22 +131,24 @@ label{
     width: 50%;
 }
 .boton-login {
-    background-color: orangered;
+    background-color: #ff721b;
     height: 100%;
     width: 70%;
     border-radius: 25px;
     text-align: center;
     color: white;
-    padding-top: 4%;
+    padding-top: 5%;
     text-decoration-line: none;
     font-family: "SN Pro", sans-serif;
-    font-weight: 400;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .footer-text {
     font-size: 60%;
     font-family: "SN Pro", sans-serif;
     margin-top: 4%;
+    text-align: center;
 }
 
 
