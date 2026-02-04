@@ -3,198 +3,230 @@
 /* ============================================ */
 
 /* ===== RESET GLOBAL ===== */
-/* Elimina todos los márgenes predeterminados del navegador */
-*{
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* ===== CONTENEDOR DE FONDO CON IMAGEN ===== */
-/* Pantalla completa con imagen de fondo para la página de login */
 .background_img {
-    width: 100%;                    /* Ocupa todo el ancho de la ventana */
-    height: 100vh;                  /* Ocupa toda la altura de la ventana (viewport height) */
-    background-size: cover;         /* La imagen cubre todo el contenedor */
-    background: url("../media/pexels-pixabay-159400.png")no-repeat;  /* Imagen de fondo sin repetición */
-    align-items: center;            /* Centra verticalmente el contenido */
-    background-color: black;        /* Color de fondo negro (fallback si no carga la imagen) */
-    display: flex;                  /* Activa Flexbox para centrar contenido */
-    justify-content: center;        /* Centra horizontalmente el contenido */
-    align-items: center;            /* Centra verticalmente el contenido (duplicado) */
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background: url("../media/pexels-pixabay-159400.png") no-repeat center;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    position: relative; /* Necesario para el position absolute del container */
 }
 
 /* ===== ANIMACIÓN DEL LOGO ===== */
-/* Animación de parpadeo/fade para el logo inicial */
 @keyframes logo_animation {
-    from {
-        opacity: 100%;              /* Logo totalmente visible al inicio */
-    }
-    to {
-        opacity: 0%;                /* Logo totalmente transparente al final */
-    }
+    from { opacity: 100%; }
+    to { opacity: 0%; }
 }
 
 /* ===== LOGO INICIAL ===== */
-/* Logo que aparece antes del formulario de login con animación de parpadeo */
-.logo{
-    max-height: 150px;                      /* Altura máxima del logo */
-    animation: logo_animation;              /* Aplica la animación definida arriba */
-    animation-duration: 0.5s;               /* Duración de cada ciclo de animación */
-    animation-iteration-count: 2;           /* Se repite 2 veces (aparece y desaparece 2 veces) */
-    animation-delay: 0.7s;                  /* Espera 0.7 segundos antes de iniciar */
-    animation-direction: alternate;         /* Alterna entre fade-out y fade-in */
+.logo {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+    animation: logo_animation 0.5s 0.7s 2 alternate;
 }
 
 /* ===== CONTENEDOR DEL FORMULARIO DE LOGIN ===== */
-/* Caja blanca central que contiene el formulario de inicio de sesión */
 .login_container {
-    align-items: center;                    /* Centra el contenido horizontalmente */
-    justify-content: center;                /* Centra el contenido verticalmente */
-    position: absolute;                     /* Posicionamiento absoluto para superponerse al fondo */
-    width: 45%;                             /* Ocupa el 45% del ancho de la pantalla */
-    height: 80%;                            /* Ocupa el 80% de la altura de la pantalla */
-    background-color: white;                /* Fondo blanco para contraste con la imagen */
-    border-radius: 7%;                      /* Bordes muy redondeados (forma ovalada) */
-    display: flex;                          /* Activa Flexbox para organizar elementos internos */
-    flex-direction: column;                 /* Organiza elementos en columna vertical */
-
-    animation: login-animation;             /* Aplica animación de aparición */
-    animation-duration: 0.5s;               /* Duración de la animación de aparición */
-    animation-delay: 3s;                    /* Espera 3 segundos antes de aparecer (después del logo) */
-    animation-fill-mode: forwards;          /* Mantiene el estado final de la animación */
-    visibility: hidden;                     /* Oculto inicialmente (se muestra con la animación) */
+    position: absolute; /* VUELVE A ABSOLUTE para superponerse al fondo */
+    width: 70%;
+    max-width: 500px;
+    min-height: 500px;
+    background-color: white;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    
+    animation: login-animation 0.5s 3s forwards;
+    visibility: hidden;
 }
 
 /* ===== LOGO DENTRO DEL CONTENEDOR DE LOGIN ===== */
-/* Logo pequeño de Kario dentro del formulario */
-.register_logo{
-    margin-top: 1%;                         /* Pequeño margen superior */
-    width: 12%;                             /* Ancho del 12% del contenedor padre */
-    align-items: center;                    /* Centra el logo */
+.register_logo {
+    width: 80px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
 }
 
 /* ===== ETIQUETA "MEDIA" ===== */
-/* Texto pequeño que indica la categoría del servicio */
 h5 {
-    font-family: "Quicksand", sans-serif;   /* Fuente Quicksand */
-    font-optical-sizing: none;              /* Desactiva el ajuste óptico de la fuente */
-    font-weight: 200;                       /* Peso de fuente muy ligero */
-    letter-spacing: 0.3ch;                  /* Espaciado amplio entre letras */
+    font-family: "Quicksand", sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.3ch;
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    text-align: center;
 }
 
 /* ===== TÍTULO PRINCIPAL DE BIENVENIDA ===== */
-/* "Bienvenido al panel digital de KARIO Media" */
 h3 {
-    margin-top: 2%;                         /* Espacio superior */
-    text-align: center;                     /* Centra el texto */
-    font-size: 170%;                        /* Tamaño de fuente grande (170% del tamaño base) */
-    font-family: sans-serif;                /* Fuente sans-serif genérica */
-    font-weight: 500;                       /* Peso de fuente medio */
+    margin-top: 1rem;
+    text-align: center;
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+    font-family: sans-serif;
+    font-weight: 500;
+    padding: 0 1rem;
 }
 
 /* ===== ETIQUETAS DE FORMULARIO ===== */
-/* Etiquetas "Usuario:" y "Contraseña:" */
-label{
-    margin-top: 2%;                         /* Espacio superior */
-    color: black;                           /* Color negro */
-    font-size: medium;                      /* Tamaño medio */
-    font-family: "Roboto", sans-serif;      /* Fuente Roboto */
+label {
+    margin-top: 1rem;
+    color: black;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    text-align: left;
 }
 
 /* ===== PÁRRAFOS DE TEXTO ===== */
-/* Texto descriptivo y de ayuda */
 p {
-    margin-top: 2%;                         /* Espacio superior */
-    font-size: medium;                      /* Tamaño medio */
-    text-align: center;                     /* Centra el texto */
-    width: 80%;                             /* Ocupa el 80% del ancho del contenedor */
-    font-family: "SN Pro", sans-serif;      /* Fuente corporativa SN Pro */
-    font-weight: lighter;                   /* Peso de fuente ligero */
+    margin-top: 1rem;
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    font-family: "SN Pro", sans-serif;
+    font-weight: lighter;
+    padding: 0 1rem;
 }
 
 /* ===== CAMPOS DE ENTRADA (INPUTS) ===== */
-/* Campos de texto para usuario y contraseña */
 .input-form {
-    border: 1px solid gray;                 /* Borde gris de 1px */
-    border-radius: 12px;                    /* Bordes redondeados */
-    box-sizing: border-box;                 /* Incluye padding y border en el cálculo del tamaño */
-    width: 60vh;                            /* Ancho de 60vh (viewport height units) */
-    height: 42px;                           /* Altura fija de 42px */
-    padding: 0 12px;                        /* Padding horizontal de 12px, sin padding vertical */
+    border: 1px solid gray;
+    border-radius: 12px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
+    height: 42px;
+    padding: 0 12px;
+    margin-top: 0.5rem;
+    font-size: 1rem;
 }
 
 /* ===== CONTENEDOR DEL FORMULARIO ===== */
-/* Envuelve todos los elementos del formulario */
 .form-code {
-    margin-top: 2%;                         /* Espacio superior */
-    display: flex;                          /* Activa Flexbox */
-    flex-direction: column;                 /* Organiza elementos en columna */
-    align-items: center;                    /* Centra elementos horizontalmente */
-    width: 80%;                             /* Ocupa el 80% del ancho */
-    font-family: "Quicksand", sans-serif;   /* Fuente Quicksand para todo el formulario */
-}
-
-/* ===== TEXTO DE FORMULARIOS ===== */
-/* Clase para textos adicionales dentro del formulario (aparentemente no usada en el HTML) */
-.text-forms {
-    font-size: medium;                      /* Tamaño medio */
-    margin-left: 0;                         /* Sin margen izquierdo */
-    width: 100%;                            /* Ancho completo */
-    color: rgb(43, 43, 43);                 /* Color gris oscuro */
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    font-family: "Quicksand", sans-serif;
 }
 
 /* ===== CONTENEDOR DEL BOTÓN ===== */
-/* Envuelve el botón de "Ingresar al panel" */
 .boton-container {
-    box-sizing: border-box;                 /* Incluye padding y border en el cálculo del tamaño */
-    align-items: center;                    /* Centra contenido */
-    justify-content: center;                /* Centra contenido verticalmente */
-    display: flex;                          /* Activa Flexbox */
-    flex-direction: column;                 /* Organiza en columna */
-    margin-top: 6%;                         /* Espacio superior */
-    margin-left: 19%;                       /* Margen izquierdo para centrar */
-    height: 25%;                            /* Altura del 25% */
-    width: 60%;                             /* Ancho del 60% */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 400px;
 }
 
 /* ===== BOTÓN DE LOGIN ===== */
-/* Botón naranja "Ingresar al panel" */
 .boton-login {
-    background-color: #ff721b;              /* Color naranja corporativo de Kario */
-    width: 100%;                            /* Ocupa todo el ancho del contenedor */
-    height: 60px;                           /* Altura fija de 60px */
-    border-radius: 25px;                    /* Bordes muy redondeados (botón tipo píldora) */
-    text-align: center;                     /* Centra el texto */
-    color: white;                           /* Texto blanco */
-    text-decoration-line: none;             /* Sin subrayado (para cuando es <a>) */
-    font-family: "SN Pro", sans-serif;      /* Fuente corporativa */
-    font-size: 20px;                        /* Tamaño de fuente grande */
-    border: none;                           /* Sin borde */
+    background-color: #ff721b;
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    text-decoration-line: none;
+    font-family: "SN Pro", sans-serif;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Estado hover del botón - se activa al pasar el mouse */
 .boton-login:hover {
-    background-color: #e66016;              /* Color naranja más oscuro */
-    transition-duration: 0.4s;              /* Transición suave de 0.4 segundos */
-    cursor: pointer;                        /* Cambia el cursor a manita */
+    background-color: #e66016;
+    transition: background-color 0.4s ease;
+    cursor: pointer;
 }
 
 /* ===== TEXTO DEL PIE ===== */
-/* Texto de ayuda al final: "Tienes problemas para ingresar?..." */
 .footer-text {
-    font-size: 60%;                         /* Tamaño muy pequeño (60% del base) */
-    font-family: "SN Pro", sans-serif;      /* Fuente corporativa */
-    margin-top: 8%;                         /* Espacio superior considerable */
-    text-align: center;                     /* Centra el texto */
+    font-size: clamp(0.7rem, 2vw, 0.85rem);
+    font-family: "SN Pro", sans-serif;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 0 1rem;
 }
 
 /* ===== ANIMACIÓN DE APARICIÓN DEL FORMULARIO ===== */
-/* Animación que hace aparecer gradualmente el contenedor de login */
 @keyframes login-animation {
     from {
-        opacity: 0%;                        /* Comienza totalmente transparente */
+        opacity: 0%;
+        transform: scale(0.95);
     }
     to {
-        visibility: visible;                /* Se hace visible */
-        opacity: 100%;                      /* Termina totalmente opaco */
+        visibility: visible;
+        opacity: 100%;
+        transform: scale(1);
+    }
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablets y pantallas medianas */
+@media (min-width: 768px) {
+    .login_container {
+        width: 60%;
+        max-width: 550px;
+        padding: 3rem 2rem;
+    }
+    
+    .register_logo {
+        width: 100px;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    .login_container {
+        width: 45%;
+        max-width: 600px;
+    }
+}
+
+/* Pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .login_container {
+        width: 95%;
+        padding: 1.5rem 1rem;
+        border-radius: 1.5rem;
+    }
+    
+    .boton-login {
+        height: 45px;
+    }
+}
+
+/* Ajuste para pantallas en orientación horizontal (móvil) */
+@media (max-height: 600px) and (orientation: landscape) {
+    .login_container {
+        min-height: auto;
+        padding: 1rem;
+        overflow-y: auto;
+        max-height: 90vh;
     }
 }
