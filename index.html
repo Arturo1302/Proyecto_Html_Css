@@ -17,29 +17,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="background_img ">
+    <!-- ============================================-->
+    <!--    PÁGINA DE INICIO DE SESIÓN (LOGIN)      -->
+    <!-- ============================================-->
+    <!-- Contenedor principal con imagen de fondo para la pantalla de login -->
+    <div class="background_img">
+        
+        <!-- SECCIÓN SUPERIOR: Logo de la empresa -->
         <div class="logo_container">
-            <img  class="logo" src="./media/kario sin kairo.svg" alt="Logo">
+            <!-- Logo principal de Kario en la parte superior de la página -->
+            <img class="logo" src="./media/kario sin kairo.svg" alt="Logo">
         </div>
+        
+        <!-- CONTENEDOR PRINCIPAL DEL FORMULARIO DE LOGIN -->
         <div class="login_container">
-            <img class= "register_logo" src="./media/kario sin kairo.svg">
-            <h5> MEDIA</h5>
+            
+            <!-- Logo secundario dentro del contenedor de login -->
+            <img class="register_logo" src="./media/kario sin kairo.svg">
+            
+            <!-- Etiqueta de categoría de la plataforma -->
+            <h5>MEDIA</h5>
+            
+            <!-- Título de bienvenida principal -->
+            <!-- Utiliza <br> para dividir el texto en dos líneas -->
             <h3>Bienvenido al panel digital de<br> KARIO Media</h3>
+            
+            <!-- Instrucción para el usuario -->
             <p>Por favor ingresa los siguientes datos para ingresar a la plataforma</p>
+            
+            <!-- SECCIÓN DEL FORMULARIO DE AUTENTICACIÓN -->
             <div class="form-code">
+                <!-- Formulario que redirige a la página de bienvenida al enviar -->
                 <form action="./pages/welcome-page.html">
+                    
+                    <!-- CAMPO 1: Usuario/Nombre de usuario -->
                     <label>Usuario:</label><br>
-                    <input class="input-form" type="text" required ><br><br>
-                    <label >Contraseña:</label><br>
-                    <input class="input-form" type="password" required>
+                    <input class="input-form" 
+                           type="text" 
+                           required><br><br>
+                    
+                    <!-- CAMPO 2: Contraseña -->
+                    <label>Contraseña:</label><br>
+                    <input class="input-form" 
+                           type="password" 
+                           required>
+                    
+                    <!-- BOTÓN DE ENVÍO: Ingresar al sistema -->
                     <div class="boton-container">
-                    <button  class="boton-login" type=submit>Ingresar al panel</button>
+                        <button class="boton-login" type="submit">Ingresar al panel</button>
                     </div>
                 </form>
             </div>
             
-            
-            <p class="footer-text">Tienes problemas para ingresar?Por favor contactarse con asistencia tecnica lo mas pronto posible</p>
+            <!-- TEXTO DE PIE: Información de ayuda para problemas de acceso -->
+            <p class="footer-text">
+                Tienes problemas para ingresar? Por favor contactarse con asistencia tecnica lo mas pronto posible
+            </p>
             
         </div>  
     </div>  

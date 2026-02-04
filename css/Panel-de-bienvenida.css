@@ -1,131 +1,151 @@
+/* ============================================ */
+/*  ESTILOS PARA LA PÁGINA DE BIENVENIDA      */
+/* ============================================ */
+
+/* ===== RESET GLOBAL ===== */
+/* Elimina todos los márgenes predeterminados del navegador */
 * {
     margin: 0;
 }
+
+/* ===== CONTENEDOR DE FONDO CON IMAGEN ===== */
+/* Pantalla completa con imagen de fondo que desaparece después de mostrar el panel de bienvenida */
 .background_img {
-    width: 100vmax;
-    height: 100vmin;
-    background-size: cover;
-    background: url("../media/pexels-pixabay-159400.png")no-repeat;
-    align-items: center;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100vmax;                     /* Usa el mayor valor entre viewport width y viewport height */
+    height: 100vmin;                    /* Usa el menor valor entre viewport width y viewport height */
+    background-size: cover;             /* La imagen cubre todo el contenedor */
+    background: url("../media/pexels-pixabay-159400.png")no-repeat;  /* Imagen de fondo sin repetición */
+    align-items: center;                /* Centra verticalmente el contenido */
+    background-color: black;            /* Color de fondo negro de respaldo */
+    display: flex;                      /* Activa Flexbox para centrar contenido */
+    justify-content: center;            /* Centra horizontalmente el contenido */
+    align-items: center;                /* Centra verticalmente el contenido (duplicado) */
 
-    animation: background-welcome-panel;
-    animation-delay: 4s;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards; 
-
+    animation: background-welcome-panel; /* Aplica animación de desaparición del fondo */
+    animation-delay: 4s;                /* Espera 4 segundos antes de comenzar a desaparecer */
+    animation-duration: 0.8s;           /* Duración de la animación de desaparición */
+    animation-fill-mode: forwards;      /* Mantiene el estado final (hidden) después de la animación */
 }
 
- @keyframes background-welcome-panel {
+/* ===== ANIMACIÓN DE DESAPARICIÓN DEL FONDO ===== */
+/* Hace desaparecer gradualmente el fondo negro con imagen después de 4 segundos */
+@keyframes background-welcome-panel {
     from {
-        visibility: visible;
-        opacity: 100%;
+        visibility: visible;            /* Comienza visible */
+        opacity: 100%;                  /* Totalmente opaco */
     }
-
     to {
-        visibility: hidden;
-        opacity: 0%;
-        pointer-events: none;
-        z-index: 10;
-        display: none;
+        visibility: hidden;             /* Termina oculto */
+        opacity: 0%;                    /* Totalmente transparente */
+        pointer-events: none;           /* Desactiva interacciones del mouse */
+        z-index: 10;                    /* Ajusta posición en el eje Z */
+        display: none;                  /* Oculta completamente el elemento */
     }
-
 } 
 
+/* ===== CONTENEDOR DEL PANEL DE BIENVENIDA ===== */
+/* Caja blanca central que muestra información de bienvenida del usuario */
+/* Aparece y desaparece con animación de parpadeo antes de mostrar el contenido principal */
 .welcome-panel-container {
-    align-items: center;
-    position: absolute;
-    width: 40%;
-    height: 50%;
-    background-color: rgb(255, 255, 255);
-    border-radius: 7%;
-    display: flex;
-    flex-direction: column;
+    align-items: center;                /* Centra el contenido horizontalmente */
+    position: absolute;                 /* Posicionamiento absoluto sobre el fondo */
+    width: 40%;                         /* Ocupa el 40% del ancho de la pantalla */
+    height: 50%;                        /* Ocupa el 50% de la altura de la pantalla */
+    background-color: rgb(255, 255, 255); /* Fondo blanco */
+    border-radius: 7%;                  /* Bordes muy redondeados (forma ovalada) */
+    display: flex;                      /* Activa Flexbox para organizar contenido interno */
+    flex-direction: column;             /* Organiza elementos en columna vertical */
 
-    animation: welcome-panel;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 2;
-    animation-direction:alternate-reverse;
-
-
-
+    animation: welcome-panel;           /* Aplica animación de aparición/desaparición */
+    animation-duration: 1.5s;           /* Cada ciclo dura 1.5 segundos */
+    animation-fill-mode: forwards;      /* Mantiene el estado final de la animación */
+    animation-iteration-count: 2;       /* Se repite 2 veces (aparece y desaparece dos veces) */
+    animation-direction: alternate-reverse; /* Alterna la dirección: primero reversa, luego normal */
 }
 
-/*la verdad casi no consigo hacer esto, pero indica los tiempos de animacion,
-un poco mas tecnico, tiempos de pausa durante la animacion*/
-
+/* ===== ANIMACIÓN DEL PANEL DE BIENVENIDA ===== */
+/* Animación con tiempos específicos (keyframes) para controlar cuándo aparece/desaparece */
+/* La verdad casi no consigo hacer esto, pero indica los tiempos de animación,
+   un poco más técnico, tiempos de pausa durante la animación */
 @keyframes welcome-panel {
-    0%   { opacity: 100%; /*tambien se puede usar 1*/ }
-    80%  { opacity: 100%; } 
-    100% { opacity: 0%; /*tambien se puede usar 0*/  }
+    0%   { opacity: 100%; /* También se puede usar 1 */ }
+    80%  { opacity: 100%; }  /* Mantiene opacidad 100% hasta el 80% de la animación */
+    100% { opacity: 0%;   /* También se puede usar 0 */ }  /* Desaparece en el último 20% */
 }
 
+/* ===== LOGO INICIAL ===== */
+/* Logo que aparece en el centro de la pantalla antes del panel de bienvenida */
 .logo{
-    max-height: 150px;
-    animation: logo-animation;
-    animation-duration: 1s;
-    animation-iteration-count: 2;
-    animation-delay: 2s;
-    visibility: hidden;
-    animation-fill-mode:forwards;
-    /*añadir hiden*/
+    max-height: 150px;                  /* Altura máxima del logo */
+    animation: logo-animation;          /* Aplica animación de aparición */
+    animation-duration: 1s;             /* Duración de cada ciclo de animación */
+    animation-iteration-count: 2;       /* Se repite 2 veces */
+    animation-delay: 2s;                /* Espera 2 segundos antes de comenzar */
+    visibility: hidden;                 /* Comienza oculto (se muestra con la animación) */
+    animation-fill-mode: forwards;      /* Mantiene el estado final (visible) */
+    /* Añadir hidden */
 }
 
-
-
+/* ===== LOGO DENTRO DEL PANEL DE BIENVENIDA ===== */
+/* Logo pequeño de Kario en la parte superior del panel de bienvenida */
 .register_logo{
-    margin-top: 4%;
-    max-width: 10%;
-    
+    margin-top: 4%;                     /* Margen superior del 4% */
+    max-width: 10%;                     /* Ancho máximo del 10% del contenedor */
 }
 
+/* ===== ANIMACIÓN DE APARICIÓN DEL LOGO ===== */
+/* Hace aparecer el logo gradualmente */
 @keyframes logo-animation {
-
     to {
-        visibility: visible;
-        opacity: 100%;
+        visibility: visible;            /* Se hace visible */
+        opacity: 100%;                  /* Totalmente opaco */
     }
-
 }
 
+/* ===== TÍTULOS PRINCIPALES (H3) ===== */
+/* Títulos como "Bienvenido de nuevo" y nombre del usuario */
 h3 {
-    margin-top: 2%;
-    text-align: center;
-    font-size: 160%;
-    font-family: sans-serif;
-    font-weight: 500;
-
+    margin-top: 2%;                     /* Espacio superior */
+    text-align: center;                 /* Centra el texto */
+    font-size: 160%;                    /* Tamaño de fuente del 160% del tamaño base */
+    font-family: sans-serif;            /* Fuente sans-serif genérica */
+    font-weight: 500;                   /* Peso de fuente medio */
 }
 
+/* ===== ETIQUETA "MEDIA" (H5) ===== */
+/* Texto pequeño que indica la categoría del servicio */
 h5 {
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing:none;
-    font-weight: 200;
-    letter-spacing:0.3ch;
+    font-family: "Quicksand", sans-serif; /* Fuente Quicksand */
+    font-optical-sizing: none;          /* Desactiva el ajuste óptico automático */
+    font-weight: 200;                   /* Peso de fuente muy ligero */
+    letter-spacing: 0.3ch;              /* Espaciado amplio entre letras (0.3 caracteres) */
 }
+
+/* ===== PÁRRAFOS (P) ===== */
+/* Texto descriptivo en el panel de bienvenida */
 p{
-    margin-top: 2%;
-    color: grey;
-    font-size: 75%;
-    font-family: "Roboto", sans-serif;
-
+    margin-top: 2%;                     /* Espacio superior */
+    color: grey;                        /* Color gris */
+    font-size: 75%;                     /* Tamaño pequeño (75% del base) */
+    font-family: "Roboto", sans-serif;  /* Fuente Roboto */
 }
 
+/* ===== TEXTO DEL PIE DEL PANEL ===== */
+/* Texto "Usuario Administrador" al final del panel de bienvenida */
 .footer-welcome-panel{
-    font-size: small;
+    font-size: small;                   /* Tamaño de fuente pequeño */
 }
 
+/* ===== FOTO DE PERFIL ===== */
+/* Imagen circular del usuario en el panel de bienvenida */
 .photo-icon {
-    margin-top: 3%;
-    height: 25%;
+    margin-top: 3%;                     /* Espacio superior del 3% */
+    height: 25%;                        /* Altura del 25% del contenedor */
 }
 
+/* ===== TEXTO DEL PANEL DE BIENVENIDA ===== */
+/* Texto del nombre del usuario "Pedro Felipe Gómez Bonilla" */
 .welcome-text-panel {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-
+    font-family: "Roboto", sans-serif;  /* Fuente Roboto */
+    font-weight: 400;                   /* Peso de fuente normal */
 }

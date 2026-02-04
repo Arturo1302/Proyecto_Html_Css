@@ -17,95 +17,110 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- CONTENEDOR PRINCIPAL DE LA APLICACIÓN -->
     <div class="container">   
+        <!-- ENCABEZADO CON BARRA DE NAVEGACIÓN -->
         <header>    
             <div class="barra_superior">
                 <nav class="tabla_contenido">
                     <ul>
-                        <!-- Boton de Añadir -->
+                        <!-- BOTÓN AÑADIR: Permite agregar nuevos indicadores al sistema -->
                         <li class="boton boton--hover">
                             <a href="Anadir.html">
-                                <img src="../media/Group 3.svg"  alt="Agregar">
+                                <img src="../media/Group 3.svg" alt="Agregar">
                                 Añadir
                             </a>
                         </li>
-                        <!-- Boton de refrescar -->
+                        
+                        <!-- BOTÓN REFRESCAR: Actualiza el contenido de la página -->
+                        <!-- NOTA: El enlace apunta a Eliminar.html, debería ser una función de refresh -->
                         <li class="boton boton--hover">
                             <a href="Eliminar.html">
-                                <img src="../media/Icon open-reload.svg"  alt="Refrescar">
+                                <img src="../media/Icon open-reload.svg" alt="Refrescar">
                                 Refrescar
                             </a>
                         </li>
-                        <!-- Boton de eliminar -->
+                        
+                        <!-- BOTÓN ELIMINAR: Navega a la página de eliminación de elementos -->
                         <li class="boton boton--hover">
                             <a href="Eliminar.html">
-                                <img src="../media/Icon material-delete-forever.svg"  alt="Eliminar">
+                                <img src="../media/Icon material-delete-forever.svg" alt="Eliminar">
                                 Eliminar
                             </a>
                         </li>
-                        <!-- Boton con el logo de la empresa -->
+                        
+                        <!-- LOGO DE LA EMPRESA: Enlace de retorno a la página principal -->
                         <li class="boton--hover">
                             <a href="Principal.html">
                                 <img class="logo-middle" src="../media/kario sin kairo.svg" alt="Inicio">
                             </a>
                         </li>
-                        <!-- Boton de Reportar -->
+                        
+                        <!-- BOTÓN REPORTAR: Acceso a la sección de reportes de errores -->
                         <li class="boton boton--hover">
                             <a href="Reportes.html">
-                                <img src="../media/Icon material-bug-report.svg"  alt="Reportar">
+                                <img src="../media/Icon material-bug-report.svg" alt="Reportar">
                                 Reportar
                             </a>
                         </li>
                     
-                        <!-- Boton de ayuda -->
+                        <!-- BOTÓN AYUDA: Acceso a la sección de ayuda y soporte técnico -->
                         <li class="boton boton--hover">
                             <a href="Ayuda.html">
-                                <img src="../media/icono_pregunta.svg"  alt="Ayuda">
+                                <img src="../media/icono_pregunta.svg" alt="Ayuda">
                                 Ayuda
                             </a>
                         </li>
                     </ul>
-                    <!-- Foto del usuario -->
-                    <!-- Logo de configuracion y notificaciones -->
+                    
+                    <!-- SECCIÓN DERECHA DEL HEADER: Herramientas del usuario -->
                     <div class="footer_superior">
+                        <!-- BOTÓN CONFIGURACIÓN: Acceso a ajustes del sistema -->
+                        <!-- NOTA: El atributo alt dice "Buscar" pero debería decir "Configuración" -->
                         <div class="boton--hover">
-                        <img src="../media/Icon ionic-ios-settings.svg"   alt="Buscar">
+                            <img src="../media/Icon ionic-ios-settings.svg" alt="Buscar">
                         </div>
+                        
+                        <!-- BOTÓN NOTIFICACIONES: Muestra alertas y avisos del sistema -->
                         <div class="boton--hover">
-                        <img src="../media/Icon material-notifications-active.svg" alt="Notificaciones">
+                            <img src="../media/Icon material-notifications-active.svg" alt="Notificaciones">
                         </div>
 
+                        <!-- FOTO DE PERFIL: Enlace al perfil del usuario actual -->
                         <div class="boton--hover">
                             <a href="perfil.html">
                                 <img src="../media/pp.png" width="40" alt="Perfil Usuario">
                             </a>
                         </div>
                     </div> 
-
-
                 </nav>
-                
             </div>
         </header>
 
+        <!-- SECCIÓN DE TÍTULO Y DESCRIPCIÓN DE LA PÁGINA -->
         <section class="seccion-titulo">
             <h1>Eliminar</h1>
             <p>Selecciona las casillas a la derecha para elegir el contenido a eliminar</p>
         </section>
         
+        <!-- SECCIÓN PRINCIPAL: TABLA DE INDICADORES -->
         <section class="Principal-table">
+            <!-- TABLA DE DATOS DE PROYECTOS/INDICADORES -->
             <table>
+                <!-- FILA DE ENCABEZADOS DE LA TABLA -->
                 <tr class="table-tittle">
-                    <td>Indicador</td>
-                    <td>Descripcion</td>
-                    <td>Categoría</td>
-                    <td>Fecha de Inicio</td>
-                    <td>Fecha de Terminacion</td>
-                    <td>Formula</td>
-                    <td>Frecuencia</td>
-                    <td>Cumplimiento</td>
-                    <td>Area</td>
+                    <td>Indicador</td>           <!-- Nombre del proyecto/indicador -->
+                    <td>Descripcion</td>         <!-- Breve descripción del indicador -->
+                    <td>Categoría</td>           <!-- Clasificación por prioridad (Alta/Media/Baja) -->
+                    <td>Fecha de Inicio</td>     <!-- Fecha de comienzo del proyecto -->
+                    <td>Fecha de Terminacion</td><!-- Fecha de finalización estimada -->
+                    <td>Formula</td>             <!-- Metodología o fórmula aplicada -->
+                    <td>Frecuencia</td>          <!-- Periodicidad de medición -->
+                    <td>Cumplimiento</td>        <!-- Porcentaje de avance (visual) -->
+                    <td>Area</td>                <!-- Departamento responsable -->
                 </tr>
+                
+                <!-- FILA 1: Proyecto Modelado 3D -->
                 <tr class="Border-designed">
                     <td>Modelado 3D</td>
                     <td>Interes por dise...</td>
@@ -114,10 +129,11 @@
                     <td>12/12/21</td>
                     <td>MetÁgil</td>
                     <td>1/4</td>
-                    <td><img class="progress-icon" src="../media/progress-icon-31.png"></td>
+                    <td><img class="progress-icon" src="../media/progress-icon-31.png"></td> <!-- 31% completado -->
                     <td>Marketing</td>
-
                 </tr>
+                
+                <!-- FILA 2: Proyecto Finca Galeón -->
                 <tr class="Border-designed">
                     <td>Finca Galeón</td>
                     <td>Diseño de maque..</td>
@@ -126,10 +142,11 @@
                     <td>12/05/21</td>
                     <td>MetÁgil</td>
                     <td>1/4</td>
-                    <td><img class="progress-icon" src="../media/progress-icon-25.png"></td>
+                    <td><img class="progress-icon" src="../media/progress-icon-25.png"></td> <!-- 25% completado -->
                     <td>Diseño</td>
-
                 </tr>
+                
+                <!-- FILA 3: Proyecto Colegios Privados -->
                 <tr class="Border-designed">
                     <td>Colegios Privador</td>
                     <td>Se busca llegar a los...</td>
@@ -138,10 +155,11 @@
                     <td>12/11/21</td>
                     <td>MetFibo</td>
                     <td>1/4</td>
-                    <td><img class="progress-icon" src="../media/progress-icon-80.png"></td>
+                    <td><img class="progress-icon" src="../media/progress-icon-80.png"></td> <!-- 80% completado -->
                     <td>Developers</td>
-
                 </tr>
+                
+                <!-- FILA 4: Proyecto Electrodomésticos -->
                 <tr class="Border-designed">
                     <td>Electrodomésticos</td>
                     <td>Ventas de electro...</td>
@@ -150,10 +168,11 @@
                     <td>12/09/21</td>
                     <td>N/A</td>
                     <td>1/3</td>
-                    <td><img class="progress-icon" src="../media/progress-icon-32.png"></td>
+                    <td><img class="progress-icon" src="../media/progress-icon-32.png"></td> <!-- 32% completado -->
                     <td>Gerencia</td>
-
                 </tr>
+                
+                <!-- FILA 5: Proyecto Estrado 2 - Floridablanca -->
                 <tr class="Border-designed">
                     <td>Estrado 2- Floridablanca</td>
                     <td>Impacto en los sec...</td>
@@ -162,10 +181,11 @@
                     <td>12/09/21</td>
                     <td>MetExpo</td>
                     <td>1/3</td>
-                    <td><img class="progress-icon" src="../media/progress-icon-95.png"></td>
+                    <td><img class="progress-icon" src="../media/progress-icon-95.png"></td> <!-- 95% completado -->
                     <td>Gerencia</td>
-
                 </tr>
+                
+                <!-- FILA 6: Proyecto Joven en Acción -->
                 <tr class="Border-designed">
                     <td>Joven en Acción</td>
                     <td>Impacto en los sec...</td>
@@ -174,22 +194,28 @@
                     <td>09/11/21</td>
                     <td>MetExpo</td>
                     <td>1/3</td>
-                    <td><img class="progress-icon" src="../media/progress-icon-75.png"></td>
+                    <td><img class="progress-icon" src="../media/progress-icon-75.png"></td> <!-- 75% completado -->
                     <td>Produccion</td>
                 </tr>
             </table>
             
+            <!-- COLUMNA DE CHECKBOXES: Para seleccionar filas a eliminar -->
+            <!-- Cada checkbox corresponde a una fila de la tabla (6 filas = 6 checkboxes) -->
             <div class="lines-images">
-                <div><input class="three-lines-img" type="checkbox"></div>
-                <div><input class="three-lines-img" type="checkbox"></div>
-                <div><input class="three-lines-img" type="checkbox"></div>
-                <div><input class="three-lines-img" type="checkbox"></div>
-                <div><input class="three-lines-img" type="checkbox"></div>
-                <div><input class="three-lines-img" type="checkbox"></div>
+                <div><input class="three-lines-img" type="checkbox"></div> <!-- Checkbox para Modelado 3D -->
+                <div><input class="three-lines-img" type="checkbox"></div> <!-- Checkbox para Finca Galeón -->
+                <div><input class="three-lines-img" type="checkbox"></div> <!-- Checkbox para Colegios Privados -->
+                <div><input class="three-lines-img" type="checkbox"></div> <!-- Checkbox para Electrodomésticos -->
+                <div><input class="three-lines-img" type="checkbox"></div> <!-- Checkbox para Estrado 2 -->
+                <div><input class="three-lines-img" type="checkbox"></div> <!-- Checkbox para Joven en Acción -->
             </div>
         </section>
+        
+        <!-- FORMULARIO DE ELIMINACIÓN -->
         <form>  
             <div class="boton-container">
+                <!-- BOTÓN ELIMINAR: Ejecuta la acción de eliminación de elementos seleccionados -->
+                <!-- NOTA: El atributo 'href' no es válido en un botón, debería ser un enlace <a> o usar JavaScript -->
                 <button type="submit" href="Anadir.html" class="boton-eliminar">Eliminar</button>
             </div>
         </form> 

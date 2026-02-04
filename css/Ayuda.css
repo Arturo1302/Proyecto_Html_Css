@@ -1,87 +1,111 @@
-/* Contenedor principal */
+/* ============================================ */
+/*    ESTILOS PARA LA PÁGINA DE AYUDA         */
+/* ============================================ */
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+/* Contenedor que envuelve todo el contenido de la página de ayuda */
+/* Usa Flexbox para organizar el formulario y la info de contacto lado a lado */
 .ayudas-container {
-    font-family: "SN Pro", sans-serif;
-    display: flex;
-    gap: 30px;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
+    font-family: "SN Pro", sans-serif;  /* Fuente corporativa de Kario */
+    display: flex;                       /* Activa Flexbox para layout horizontal */
+    gap: 30px;                          /* Espacio entre el formulario y la info de contacto */
+    max-width: 1100px;                  /* Ancho máximo del contenedor (responsive) */
+    margin: 0 auto;                     /* Centra el contenedor horizontalmente */
+    padding: 20px;                      /* Espaciado interno */
 }
 
-/* Cuadros grises */
+/* ===== CUADROS GRISES (FORMULARIO Y CONTACTO) ===== */
+/* Estilo compartido para ambas cajas: formulario e información de contacto */
+/* Cada caja ocupa el 50% del ancho del contenedor padre */
 .formulario-ayudas {
     font-family: "SN Pro", sans-serif;
-    width: 50%;
-    padding: 30px;
-    background-color: rgba(217, 217, 217, 0.5);
-    border-radius: 12px;
+    width: 50%;                                    /* Cada caja ocupa la mitad del contenedor */
+    padding: 30px;                                 /* Espaciado interno generoso */
+    background-color: rgba(217, 217, 217, 0.5);   /* Fondo gris semi-transparente */
+    border-radius: 12px;                          /* Bordes redondeados para diseño moderno */
 }
 
-/* Etiquetas */
+/* ===== ETIQUETAS DE FORMULARIO ===== */
+/* Estilo para las etiquetas (labels) de los campos del formulario */
 .formulario-ayudas label {
-    font-weight: bold;
-    display: block;
-    margin-top: 15px;
-    margin-bottom: 5px;
+    font-weight: bold;          /* Texto en negrita para mayor visibilidad */
+    display: block;             /* Hace que cada label ocupe toda la línea */
+    margin-top: 15px;          /* Espacio superior para separar del campo anterior */
+    margin-bottom: 5px;        /* Pequeño espacio antes del input */
 }
 
-/* Inputs */
+/* ===== CAMPOS DE ENTRADA (INPUTS Y TEXTAREA) ===== */
+/* Estilo para campos de texto, email, teléfono y área de texto */
 .formulario-ayudas input,
 .formulario-ayudas textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 6px;
-    background: white;
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    width: 100%;                /* Ocupa todo el ancho disponible */
+    padding: 10px;              /* Espaciado interno para comodidad al escribir */
+    border: none;               /* Sin borde visible */
+    border-radius: 6px;         /* Bordes ligeramente redondeados */
+    background: white;          /* Fondo blanco para contraste con el gris */
+    box-sizing: border-box;     /* CRÍTICO: Incluye padding en el cálculo del ancho */
+                                /* Sin esto, el padding haría que el elemento sea más ancho que 100% */
 }
 
+/* ===== ÁREA DE TEXTO (TEXTAREA) ===== */
+/* Configuración específica para el campo de mensaje largo */
 .formulario-ayudas textarea {
-    min-height: 100px;
-    resize: vertical;
+    min-height: 100px;          /* Altura mínima para escribir cómodamente */
+    resize: vertical;           /* Permite redimensionar solo verticalmente (no horizontalmente) */
 }
 
-/* Botón */
+/* ===== BOTÓN DE ENVÍO ===== */
+/* Estilo del botón "Enviar" del formulario */
 .formulario-ayudas button {
     font-family: "SN Pro", sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    width: 300px;
-    margin: 20px auto;
-    padding: 12px;
-    background: #ff6633;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    display: block;
-}
-.formulario-ayudas button:hover {
-    background: #e6552b;
+    font-size: 20px;            /* Tamaño de fuente grande para visibilidad */
+    font-weight: bold;          /* Texto en negrita para énfasis */
+    width: 300px;               /* Ancho fijo del botón */
+    margin: 20px auto;          /* Centrado horizontal con margen superior */
+    padding: 12px;              /* Espaciado interno para hacer el botón más grande */
+    background: #ff6633;        /* Color naranja corporativo de Kario */
+    color: white;               /* Texto blanco para contraste */
+    border: none;               /* Sin borde */
+    border-radius: 6px;         /* Bordes redondeados */
+    display: block;             /* Necesario para que margin: auto funcione */
+    cursor: pointer;            /* Cambia el cursor a pointer al pasar sobre el botón */
 }
 
-/* Título */
+/* Estado hover del botón - color más oscuro al pasar el mouse */
+.formulario-ayudas button:hover {
+    background: #e6552b;        /* Naranja más oscuro para feedback visual */
+}
+
+/* ===== TÍTULO DE LA SECCIÓN ===== */
+/* Estilo para el título principal "Ayudas y Contactos" */
 .seccion_titulo h1 {
     font-family: "SN Pro", sans-serif;
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: center;         /* Centra el texto horizontalmente */
+    margin-bottom: 20px;        /* Espacio inferior antes del contenido */
 }
 
-/* Info de contacto */
+/* ===== SECCIÓN DE INFORMACIÓN DE CONTACTO ===== */
+/* Contenedor de la información de contacto (teléfonos, email, dirección) */
 .contacto-info {
     font-family: "SN Pro", sans-serif;
-    text-align: center;
+    text-align: center;         /* Centra todo el contenido */
 }
 
+/* Subtítulo "Información de Contacto" */
 .contacto-info h2 {
     font-family: "SN Pro", sans-serif;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-weight: bold;          /* Texto en negrita */
+    margin-bottom: 20px;        /* Espacio inferior antes de la lista */
 }
+
+/* Lista de datos de contacto (teléfonos, correo, dirección) */
 .contacto-info ul {
-    margin-top: 40px;
-    list-style-type: none;
-    padding: 0;
+    margin-top: 40px;           /* Espacio superior amplio */
+    list-style-type: none;      /* Elimina los puntos de viñeta predeterminados */
+    padding: 0;                 /* Elimina el padding predeterminado de la lista */
 }
+
+/* Cada elemento de la lista de contacto */
 .contacto-info ul li {
-    margin-bottom: 10px;
+    margin-bottom: 10px;        /* Espacio entre cada línea de contacto */
 }

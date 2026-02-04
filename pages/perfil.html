@@ -20,66 +20,79 @@
 <body>
 
     <!-- ============================================-->
-    <!--        CONTENEDOR PRINCIPAL-->
-    <!--============================================ -->
-    <!-- Esta caja grande contiene toda la página -->
+    <!--        CONTENEDOR PRINCIPAL                 -->
+    <!-- ============================================-->
+    <!-- Contenedor principal que envuelve toda la página de perfil -->
     <div class="container">  
+        
+        <!-- ENCABEZADO CON BARRA DE NAVEGACIÓN PRINCIPAL -->
         <header>   
             <div class="barra_superior">
                 <nav class="tabla_contenido">
+                    <!-- MENÚ DE NAVEGACIÓN PRINCIPAL -->
                     <ul>
-                        <!-- Boton de Añadir -->
+                        <!-- BOTÓN AÑADIR: Permite agregar nuevos indicadores o elementos al sistema -->
                         <li class="boton boton--hover">
                             <a href="Anadir.html">
-                                <img src="../media/Group 3.svg"  alt="Agregar">
+                                <img src="../media/Group 3.svg" alt="Agregar">
                                 Añadir
                             </a>
                         </li>
-                        <!-- Boton de refrescar -->
+                        
+                        <!-- BOTÓN REFRESCAR: Actualiza el contenido de la página actual -->
                         <li class="boton boton--hover">
-                            <a href=>
-                                <img src="../media/Icon open-reload.svg"  alt="Refrescar">
+                            <a href="perfil.html">
+                                <img src="../media/Icon open-reload.svg" alt="Refrescar">
                                 Refrescar
                             </a>
                         </li>
-                        <!-- Boton de eliminar -->
+                        
+                        <!-- BOTÓN ELIMINAR: Navega a la página de eliminación de elementos -->
                         <li class="boton boton--hover">
                             <a href="Eliminar.html">
-                                <img src="../media/Icon material-delete-forever.svg"  alt="Eliminar">
+                                <img src="../media/Icon material-delete-forever.svg" alt="Eliminar">
                                 Eliminar
                             </a>
                         </li>
-                        <!-- Boton con el logo de la empresa -->
+                        
+                        <!-- LOGO DE LA EMPRESA: Enlace de retorno a la página principal/dashboard -->
                         <li class="boton--hover">
                             <a href="Principal.html">
                                 <img class="logo-middle" src="../media/kario sin kairo.svg" alt="Inicio">
                             </a>
                         </li>
-                        <!-- Boton de Reportar -->
+                        
+                        <!-- BOTÓN REPORTAR: Acceso a la sección de reportes de bugs o problemas -->
                         <li class="boton boton--hover">
                             <a href="Reportes.html">
-                                <img src="../media/Icon material-bug-report.svg"  alt="Reportar">
+                                <img src="../media/Icon material-bug-report.svg" alt="Reportar">
                                 Reportar
                             </a>
                         </li>
                     
-                        <!-- Boton de ayuda -->
+                        <!-- BOTÓN AYUDA: Acceso a la sección de ayuda y soporte técnico -->
                         <li class="boton boton--hover">
                             <a href="Ayuda.html">
-                                <img src="../media/icono_pregunta.svg"  alt="Ayuda">
+                                <img src="../media/icono_pregunta.svg" alt="Ayuda">
                                 Ayuda
                             </a>
                         </li>
                     </ul>
-                    <!-- Foto del usuario -->
-                    <!-- Logo de configuracion y notificaciones -->
+                    
+                    <!-- SECCIÓN DERECHA DEL HEADER: Herramientas de usuario -->
                     <div class="footer_superior">
+                        <!-- BOTÓN CONFIGURACIÓN: Acceso a configuraciones del sistema -->
+                        <!-- NOTA: El atributo alt dice "Buscar" pero debería decir "Configuración" -->
                         <div class="boton--hover">
-                        <img src="../media/Icon ionic-ios-settings.svg"   alt="Buscar">
+                            <img src="../media/Icon ionic-ios-settings.svg" alt="Buscar">
                         </div>
+                        
+                        <!-- BOTÓN NOTIFICACIONES: Muestra alertas y avisos del usuario -->
                         <div class="boton--hover">
-                        <img src="../media/Icon material-notifications-active.svg" alt="Notificaciones">
+                            <img src="../media/Icon material-notifications-active.svg" alt="Notificaciones">
                         </div>
+                        
+                        <!-- FOTO DE PERFIL: Enlace a la página de perfil del usuario -->
                         <div class="boton--hover">
                             <a href="perfil.html">
                                 <img src="../media/pp.png" width="40" alt="Perfil Usuario">
@@ -90,20 +103,41 @@
             </div>
         </header>
 
+        <!-- CONTENEDOR PRINCIPAL DEL PERFIL DE USUARIO -->
         <div class="profile-container">
+            <!-- CAJA DE INFORMACIÓN DEL PERFIL -->
             <div class="profile-box">
+                
+                <!-- SECCIÓN SUPERIOR: Foto y datos básicos del usuario -->
                 <div class="photo">
-                    <img src="../media/pp@2x.png" >
-                    <h1 >Pedro Felipe Gómez Bonilla</h1>
-                    <h2 >Usuario Administrador</h2>
+                    <!-- Foto de perfil del usuario (versión de alta resolución @2x) -->
+                    <img src="../media/pp@2x.png">
+                    
+                    <!-- Nombre completo del usuario -->
+                    <h1>Pedro Felipe Gómez Bonilla</h1>
+                    
+                    <!-- Rol o tipo de usuario en el sistema -->
+                    <h2>Usuario Administrador</h2>
                 </div>
+                
+                <!-- SECCIÓN DE NAVEGACIÓN DEL PERFIL: Menú de opciones -->
                 <div class="informacion1">
+                    <!-- OPCIÓN 1: Ver los indicadores asociados al usuario -->
                     <h3 class="text">Mis indicadores</h3>
+                    
+                    <!-- OPCIÓN 2: Acceder a información personal del usuario -->
                     <h3 class="text dates">Datos personales</h3>
+                    
+                    <!-- OPCIÓN 3: Configurar y editar el perfil -->
                     <h3 class="text">Configurar perfil</h3>
-                    <h3 class="text close-profile"><a class="close" href="../index.html">Cerrar perfil</a></h3>
+                    
+                    <!-- OPCIÓN 4: Cerrar sesión y volver a la página de inicio de sesión -->
+                    <h3 class="text close-profile">
+                        <a class="close" href="../index.html">Cerrar perfil</a>
+                    </h3>
                 </div>
             </div>
         </div>
  
-    </div>    
+    </div>   
+</body>

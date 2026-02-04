@@ -1,62 +1,63 @@
+/* ================= RESET BÁSICO ================= */
+/* Elimina márgenes por defecto del navegador */
 * {
   margin: 0%;
 }
 
+/* ================= BARRA DE CONTENIDO ================= */
+/* Contenedor principal del menú */
 .tabla_contenido {
-    flex: 1;
+    flex: 1;                         /* Ocupa el espacio disponible */
     display: flex;
-    justify-content: center;
-    margin-left: 15%;
-
+    justify-content: center;         /* Centra horizontalmente */
+    margin-left: 15%;                /* Desplazamiento hacia la derecha */
 }
 
+/* Lista del menú */
 .tabla_contenido ul {
     display: flex;
-    flex-direction: row;
-    list-style: none;
+    flex-direction: row;             /* Elementos en fila */
+    list-style: none;                /* Quita los puntos de lista */
     align-items: center;
     margin: 0;
     padding: 0;
-    gap: 4rem;
-    
+    gap: 4rem;                       /* Espacio entre botones */
 }
 
+/* ================= CONTENEDOR GENERAL ================= */
 .container {
     margin-top: 0.5rem;
     background-color: white;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    
+    min-height: 100vh;               /* Ocupa toda la altura de la pantalla */
 }
 
-
+/* ================= BARRA SUPERIOR ================= */
 .barra_superior {
-    z-index: 1000;
+    z-index: 1000;                   /* Se mantiene por encima de otros elementos */
     color: black;
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%;
     background-color: white;
-    padding: 0;
     justify-content: center;
     height: 50%;
     border-bottom: 2px solid rgb(163, 163, 163);
-    
 }
 
+/* Contenedor derecho (iconos, perfil, etc.) */
 .footer_superior {
     display: flex;
     justify-content: space-between;
     width: 8%;
     padding: 0 20px;
     align-items: center;
-    margin-left: auto;
-
+    margin-left: auto;               /* Empuja el bloque hacia la derecha */
 }
 
-
+/* ================= BOTONES ================= */
 .boton {
     display: flex;
     align-items: center;
@@ -65,11 +66,10 @@
     background-color: white;
     border-radius: 10px;
     text-align: center;
-    transition: all 0.3s ease;
-
-    
+    transition: all 0.3s ease;       /* Animación suave */
 }
 
+/* Enlaces dentro de los botones */
 .boton a {
     display: flex;
     align-items: center;
@@ -77,57 +77,55 @@
     padding: 10px 20px;
     color: black;
     text-decoration: none;
-    white-space: nowrap;
-    transition: color 0.3s ease;
+    white-space: nowrap;             /* Evita saltos de línea */
     border-radius: 10px;
     font-family: "SN Pro", sans-serif;
 }
 
+/* Iconos dentro de botones */
 .boton img {
     width: 25px;
     height: 25px;
 }
 
+/* ================= LOGO CENTRAL ================= */
 .logo-middle {
-    width:35px;
+    width: 35px;
     height: 35px;
     transition: all 0.3s ease;
-
 }
 
-.logo-middle:hover{
+/* Efecto hover del logo */
+.logo-middle:hover {
     transform: scale(0.9);
-    transition: all 0.3s ease;
     cursor: pointer;
 }
 
-.boton--hover {
-    transition: all 0.3s ease;
-}
+/* ================= EFECTOS HOVER ================= */
 .boton--hover:hover {
     transform: scale(0.9);
     background-color: rgb(255, 255, 253);
     border-color: orange;
     cursor: pointer;
-    transition: all 0.3s ease;
 }
 
-
+/* ================= TÍTULO PRINCIPAL ================= */
 .principal-tittle {
-  align-items: center;
-  justify-content: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-top: 2%;
-
 }
 
+/* Título */
 .principal-tittle h1 {
   font-weight: 400;
-  font-family:"SN Pro";
+  font-family: "SN Pro";
   font-size: 2rem;
 }
 
+/* Subtítulo */
 .principal-tittle p {
   font-family: "SN Pro", sans-serif;
   font-weight: 200;
@@ -136,61 +134,64 @@
   margin-top: 1%;
 }
 
-.Principal-table{
+/* ================= TABLA PRINCIPAL ================= */
+.Principal-table {
     display: grid;
     align-items: start;
     justify-content: center;
     grid-template-columns: auto auto;
-    /*aqui doy a entender que hay 2 columnas 
-    y gracias a eso puedo poner las imagenes al lado 
-    de la tabla*/  
-    gap: 0;
+    /* Dos columnas: tabla + imágenes decorativas */
 }
 
+/* Tabla */
 .Principal-table table {
     border-collapse: separate;
-    border-spacing: 40px 10px;
+    border-spacing: 40px 10px;        /* Espaciado entre celdas */
     text-align: center;
 }
 
-
+/* Iconos */
 .three-lines-img {
     height: 25px;
     width: 25px;
 }
 
+/* Celdas con borde personalizado */
 .Border-designed {
     outline: 1px solid gray;
     border-radius: 15px;
     font-family: "SN Pro", sans-serif;
     font-weight: 300;
-}   
+}
 
-
+/* Títulos de la tabla */
 .table-tittle td {
     font-family: "SN Pro", sans-serif;
     font-weight: 600;
 }
 
+/* Iconos de progreso */
 .progress-icon {
     height: 45px;
     width: 45px;
 }
 
+/* ================= IMÁGENES LATERALES ================= */
 .lines-images {
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin-top: 50px;
-
 }
 
+/* Ajuste de cada imagen */
 .lines-images div {
     justify-content: end;
     padding: 5px 0;
     margin-top: 10%;
 }
 
+/* ================= BOTÓN FINAL ================= */
 .boton-container {
     display: flex;
     justify-content: center;
@@ -202,228 +203,11 @@
     background-color: orangered;
     border-radius: 25px;
     color: white;
-    padding: 15px 50px; /* Cambia height y width por padding osea, relativo al contenido*/
+    padding: 15px 50px;               /* Tamaño adaptable al contenido */
     text-align: center;
-    text-decoration-line: none;
+    text-decoration: none;
     font-family: "SN Pro", sans-serif;
     font-weight: 400;
-}
-/* =========================================================================== */
-
-/* ===== MEDIA QUERIES PARA RESPONSIVE ===== */
-
-/* Tablets grandes (menor a 1200px) */
-@media (max-width: 1200px) {
-    .tabla_contenido {
-        margin-left: 5%;
-    }
-    
-    .tabla_contenido ul {
-        gap: 2rem;
-    }
-    
-    .footer_superior {
-        width: 12%;
-    }
-}
-
-/* Tablets (menor a 1024px) */
-@media (max-width: 1024px) {
-    .tabla_contenido {
-        margin-left: 0;
-    }
-    
-    .tabla_contenido ul {
-        gap: 1.5rem;
-    }
-    
-    .boton a {
-        padding: 8px 15px;
-        font-size: 0.9rem;
-    }
-    
-    .boton img {
-        width: 22px;
-        height: 22px;
-    }
-    
-    .Principal-table {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .lines-images {
-        display: none; /* Ocultar las líneas decorativas en tablets */
-    }
-    
-    .Principal-table table {
-        border-spacing: 20px 10px;
-    }
-}
-
-/* Móviles (menor a 768px) */
-@media (max-width: 768px) {
-    .barra_superior {
-        height: auto;
-        padding: 10px 0;
-        flex-wrap: wrap;
-    }
-    
-    .tabla_contenido {
-        width: 100%;
-        margin-left: 0;
-    }
-    
-    .tabla_contenido ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
-        padding: 10px 5px;
-    }
-    
-    /* Ocultar texto de botones, solo mostrar iconos */
-    .boton a {
-        padding: 8px;
-        gap: 0;
-        font-size: 0; /* Oculta el texto */
-    }
-    
-    .boton img {
-        width: 28px;
-        height: 28px;
-    }
-    
-    /* Logo central visible */
-    .logo-middle {
-        width: 40px !important;
-        height: 40px !important;
-    }
-    
-    .footer_superior {
-        width: auto;
-        gap: 15px;
-        padding: 10px 15px;
-        margin-left: 0;
-        justify-content: center;
-    }
-    
-    .footer_superior img {
-        width: 28px;
-        height: 28px;
-    }
-    
-    /* Títulos */
-    .principal-tittle {
-        margin-top: 100px; /* Espacio para navbar */
-        padding: 0 15px;
-    }
-    
-    .principal-tittle h1 {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-    
-    .principal-tittle p {
-        font-size: 1rem;
-        text-align: center;
-    }
-    
-    /* Tabla principal */
-    .Principal-table {
-        padding: 0 10px;
-    }
-    
-    .Principal-table table {
-        border-spacing: 10px 8px;
-        font-size: 0.85rem;
-        width: 100%;
-    }
-    
-    .Border-designed {
-        padding: 8px 12px;
-    }
-    
-    .progress-icon {
-        height: 35px;
-        width: 35px;
-    }
-    
-    .three-lines-img {
-        height: 20px;
-        width: 20px;
-    }
-    
-    /* Botón login */
-    .boton-login {
-        padding: 12px 40px;
-        font-size: 0.9rem;
-    }
-}
-
-/* Móviles pequeños (menor a 480px) */
-@media (max-width: 480px) {
-    .container {
-        margin-top: 0;
-    }
-    
-    .barra_superior {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .tabla_contenido ul {
-        gap: 0.3rem;
-    }
-    
-    .boton {
-        margin: 5px;
-    }
-    
-    .boton a {
-        padding: 6px;
-    }
-    
-    .boton img {
-        width: 24px;
-        height: 24px;
-    }
-    
-    .logo-middle {
-        width: 35px !important;
-        height: 35px !important;
-    }
-    
-    .footer_superior {
-        margin-top: 5px;
-        gap: 10px;
-    }
-    
-    .principal-tittle h1 {
-        font-size: 1.3rem;
-    }
-    
-    .principal-tittle p {
-        font-size: 0.9rem;
-    }
-    
-    .Principal-table table {
-        border-spacing: 8px 5px;
-        font-size: 0.75rem;
-    }
-    
-    .Border-designed {
-        padding: 6px 10px;
-    }
-    
-    .progress-icon {
-        height: 30px;
-        width: 30px;
-    }
-    
-    .boton-login {
-        padding: 10px 30px;
-        font-size: 0.85rem;
-    }
 }
 
 /* Móviles muy pequeños (menor a 360px) */

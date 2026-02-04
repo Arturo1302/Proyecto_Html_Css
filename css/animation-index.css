@@ -9,18 +9,6 @@
     animation-delay: 5s;
     animation-duration: 0.8s;
     animation-fill-mode: forwards;
-    /* visibility: hidden;  */
+
     
 }
-/* 
- @keyframes principal-page-animation {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        visibility:visible;
-        opacity: 1;
-        display: block;
-    }
-}  */

@@ -22,113 +22,131 @@
 <header>  
     <div class="container">   
         <header>    
-            <div class="barra_superior">
-                <nav class="tabla_contenido">
-                    <ul>
-                        <!-- Boton de Añadir -->
-                        <li class="boton boton--hover">
-                            <a href="Anadir.html">
-                                <img src="../media/Group 3.svg"  alt="Agregar">
-                                Añadir
-                            </a>
-                        </li>
-                        <!-- Boton de refrescar -->
-                        <li class="boton boton--hover">
-                            <a href="Ayuda.html">
-                                <img src="../media/Icon open-reload.svg"  alt="Refrescar">
-                                Refrescar
-                            </a>
-                        </li>
-                        <!-- Boton de eliminar -->
-                        <li class="boton boton--hover">
-                            <a href="Eliminar.html">
-                                <img src="../media/Icon material-delete-forever.svg"  alt="Eliminar">
-                                Eliminar
-                            </a>
-                        </li>
-                        <!-- Boton con el logo de la empresa -->
-                        <li class="boton--hover">
-                            <a href="Principal.html">
-                                <img class="logo-middle" src="../media/kario sin kairo.svg" alt="Inicio">
-                            </a>
-                        </li>
-                        <!-- Boton de Reportar -->
-                        <li class="boton boton--hover">
-                            <a href="Reportes.html">
-                                <img src="../media/Icon material-bug-report.svg"  alt="Reportar">
-                                Reportar
-                            </a>
-                        </li>
-                    
-                        <!-- Boton de ayuda -->
-                        <li class="boton boton--hover">
-                            <a href="Ayuda.html">
-                                <img src="../media/icono_pregunta.svg"  alt="Ayuda">
-                                Ayuda
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- Foto del usuario -->
-                    <!-- Logo de configuracion y notificaciones -->
-                    <div class="footer_superior">
-                        <div class="boton--hover">
-                        <img src="../media/Icon ionic-ios-settings.svg"   alt="Buscar">
-                        </div>
-                        <div class="boton--hover">
-                        <img src="../media/Icon material-notifications-active.svg" alt="Notificaciones">
-                        </div>
+                <!-- BARRA DE NAVEGACIÓN SUPERIOR -->
+                <div class="barra_superior">
+                    <nav class="tabla_contenido">
+                        <ul>
+                            <!-- BOTÓN AÑADIR: Permite agregar nuevos elementos al sistema -->
+                            <li class="boton boton--hover">
+                                <a href="Anadir.html">
+                                    <img src="../media/Group 3.svg" alt="Agregar">
+                                    Añadir
+                                </a>
+                            </li>
+                            
+                            <!-- BOTÓN REFRESCAR: Actualiza el contenido de la página actual -->
+                            <li class="boton boton--hover">
+                                <a href="Ayuda.html">
+                                    <img src="../media/Icon open-reload.svg" alt="Refrescar">
+                                    Refrescar
+                                </a>
+                            </li>
+                            
+                            <!-- BOTÓN ELIMINAR: Permite borrar elementos seleccionados -->
+                            <li class="boton boton--hover">
+                                <a href="Eliminar.html">
+                                    <img src="../media/Icon material-delete-forever.svg" alt="Eliminar">
+                                    Eliminar
+                                </a>
+                            </li>
+                            
+                            <!-- LOGO DE LA EMPRESA: Enlace a la página principal -->
+                            <li class="boton--hover">
+                                <a href="Principal.html">
+                                    <img class="logo-middle" src="../media/kario sin kairo.svg" alt="Inicio">
+                                </a>
+                            </li>
+                            
+                            <!-- BOTÓN REPORTAR: Permite enviar reportes de errores o problemas -->
+                            <li class="boton boton--hover">
+                                <a href="Reportes.html">
+                                    <img src="../media/Icon material-bug-report.svg" alt="Reportar">
+                                    Reportar
+                                </a>
+                            </li>
+                        
+                            <!-- BOTÓN AYUDA: Acceso a la sección de ayuda y soporte -->
+                            <li class="boton boton--hover">
+                                <a href="Ayuda.html">
+                                    <img src="../media/icono_pregunta.svg" alt="Ayuda">
+                                    Ayuda
+                                </a>
+                            </li>
+                        </ul>
+                        
+                        <!-- SECCIÓN DERECHA DEL HEADER: Configuración, notificaciones y perfil -->
+                        <div class="footer_superior">
+                            <!-- BOTÓN CONFIGURACIÓN: Acceso a ajustes del sistema -->
+                            <div class="boton--hover">
+                                <img src="../media/Icon ionic-ios-settings.svg" alt="Buscar">
+                            </div>
+                            
+                            <!-- BOTÓN NOTIFICACIONES: Muestra alertas y notificaciones del usuario -->
+                            <div class="boton--hover">
+                                <img src="../media/Icon material-notifications-active.svg" alt="Notificaciones">
+                            </div>
 
-                        <div class="boton--hover">
-                            <a href="perfil.html">
-                                <img src="../media/pp.png" width="40" alt="Perfil Usuario">
-                            </a>
-                        </div>
-                    </div> 
-
-
-                </nav>
+                            <!-- FOTO DE PERFIL: Enlace al perfil del usuario -->
+                            <div class="boton--hover">
+                                <a href="perfil.html">
+                                    <img src="../media/pp.png" width="40" alt="Perfil Usuario">
+                                </a>
+                            </div>
+                        </div> 
+                    </nav>
+                </div>
+            </header>
+            
+            <!-- TÍTULO DE LA PÁGINA -->
+            <section class="seccion_titulo">
+                <h1>Ayudas y Contactos</h1> 
+            </section>
+            
+            <!-- CONTENEDOR PRINCIPAL DE LA SECCIÓN DE AYUDA -->
+            <div class="ayudas-container">
                 
-            </div>
-        </header>
-        
-<section class="seccion_titulo">
-            <h1>Ayudas y Contactos </h1> 
-        </section>
-        <!--CONTENEDOR DE TODO EL CUADRITO DE Ayuda-->
-    <div class="ayudas-container">
-        
-        <!-- FORMULARIO DE REPORTE -->
-        <section class="formulario-ayudas">
-            <form>
-                <label>Nombre Completo :</label>
-                <input type="text" required>
-            
-                <label>Correo:</label>
-                <input type="email" required>
-            
-                <label>Celular:</label>
-                <input type="tel" required>
-            
-                <label>¿ En que podemos ayudarte?</label>
-                <textarea required></textarea>
-            
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
+                <!-- FORMULARIO DE CONTACTO Y AYUDA -->
+                <section class="formulario-ayudas">
+                    <form>
+                        <!-- CAMPO: Nombre completo del usuario -->
+                        <label>Nombre Completo:</label>
+                        <input type="text" required>
+                    
+                        <!-- CAMPO: Correo electrónico del usuario (validación automática) -->
+                        <label>Correo:</label>
+                        <input type="email" required>
+                    
+                        <!-- CAMPO: Número de celular del usuario -->
+                        <label>Celular:</label>
+                        <input type="tel" required>
+                    
+                        <!-- CAMPO: Descripción del problema o consulta (área de texto expandible) -->
+                        <label>¿En qué podemos ayudarte?</label>
+                        <textarea required></textarea>
+                    
+                        <!-- BOTÓN: Envía el formulario al servidor -->
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
 
-        <section class="contacto-info formulario-ayudas">
-            <h2>Información de Contacto</h2>
-            <p>Si necesitas asistencia inmediata, no dudes en contactarnos a través de los siguientes medios:</p>
-            <ul>
-                <li><strong>Teléfono:</strong></li>
-                <li> (+57) 311 822 9014  -  (+57) 314 689 2033</li>
-                <li><strong>Correo Electrónico: </strong></li>
-                <li>atencionyayudas@kario.com</li>
-                <li><strong>Dirección:</strong></li>
-                <li>Calle 123 #45-67, Bucaramanga, Colombia</li>
-            </ul>
-    
-    </div>   
-</header>
+                <!-- SECCIÓN DE INFORMACIÓN DE CONTACTO DE LA EMPRESA -->
+                <section class="contacto-info formulario-ayudas">
+                    <h2>Información de Contacto</h2>
+                    <p>Si necesitas asistencia inmediata, no dudes en contactarnos a través de los siguientes medios:</p>
+                    <ul>
+                        <!-- TELÉFONOS DE CONTACTO -->
+                        <li><strong>Teléfono:</strong></li>
+                        <li>(+57) 311 822 9014 - (+57) 314 689 2033</li>
+                        
+                        <!-- CORREO ELECTRÓNICO DE SOPORTE -->
+                        <li><strong>Correo Electrónico:</strong></li>
+                        <li>atencionyayudas@kario.com</li>
+                        
+                        <!-- DIRECCIÓN FÍSICA DE LA EMPRESA -->
+                        <li><strong>Dirección:</strong></li>
+                        <li>Calle 123 #45-67, Bucaramanga, Colombia</li>
+                    </ul>
+        </section>
+    </div>  
 </body>
 </html>

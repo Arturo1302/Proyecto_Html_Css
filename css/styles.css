@@ -1,110 +1,148 @@
+/* ===================================================== */
+/* ================ RESET GENERAL ====================== */
+/* ===================================================== */
+
+/* Elimina márgenes por defecto del navegador */
 * {
   margin: 0%;
 }
 
+/* ===================================================== */
+/* ============ CONTENIDO DE LA TABLA ================== */
+/* ===================================================== */
+
+/* Contenedor principal de la lista de navegación */
 .tabla_contenido {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+    flex: 1;                       /* Permite que ocupe espacio flexible */
+    display: flex;                 /* Usa flexbox */
+    justify-content: center;       /* Centra el contenido horizontalmente */
 }
 
+/* Lista dentro de la tabla de contenido */
 .tabla_contenido ul {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    list-style: none;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+    display: flex;                 /* Elementos en fila */
+    flex-direction: row;           /* Dirección horizontal */
+    gap: 15px;                     /* Espacio entre elementos */
+    list-style: none;              /* Quita los puntos de lista */
+    align-items: center;           /* Centrado vertical */
+    margin: 0;                     /* Elimina margen por defecto */
+    padding: 0;                    /* Elimina padding por defecto */
 }
 
+/* ===================================================== */
+/* ================= CONTENEDOR ======================== */
+/* ===================================================== */
+
+/* Contenedor general de la página */
 .container {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    background-color: white;       /* Fondo blanco */
+    display: flex;                 /* Layout flexible */
+    flex-direction: column;        /* Elementos en columna */
+    min-height: 100vh;             /* Altura mínima de toda la pantalla */
 }
 
+/* ===================================================== */
+/* ================ BARRA SUPERIOR ===================== */
+/* ===================================================== */
+
+/* Barra de navegación fija en la parte superior */
 .barra_superior {
-    position: fixed;
-    z-index: 1000;
-    color: black;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    background-color: white;
-    padding: 0;
-    justify-content: center;
-    height: 50px;
-    border-bottom: 2px solid rgb(163, 163, 163);
-    flex: 1;
-    
+    position: fixed;               /* Fija en pantalla aunque se haga scroll */
+    z-index: 1000;                 /* Prioridad sobre otros elementos */
+    color: black;                  /* Color del texto */
+    display: flex;                 /* Flexbox */
+    flex-direction: row;           /* Elementos en fila */
+    align-items: center;           /* Centrado vertical */
+    width: 100%;                   /* Ocupa todo el ancho */
+    background-color: white;       /* Fondo blanco */
+    padding: 0;                    /* Sin padding */
+    justify-content: center;       /* Centra el contenido */
+    height: 50px;                  /* Altura fija */
+    border-bottom: 2px solid rgb(163, 163, 163); /* Línea inferior */
+    flex: 1;                       /* Comportamiento flexible */
 }
 
+/* ===================================================== */
+/* ============== CONTENIDO DEL FOOTER ================= */
+/* ===================================================== */
+
+/* Contenedor derecho de la barra superior */
 .footer_superior {
-    display: flex;
-    justify-content: space-between;
-    width: 8%;
-    padding: 0 20px;
-    align-items: center;
+    display: flex;                 /* Flexbox */
+    justify-content: space-between;/* Espacio entre elementos */
+    width: 8%;                     /* Ancho reducido */
+    padding: 0 20px;               /* Padding horizontal */
+    align-items: center;           /* Centrado vertical */
 }
 
+/* ===================================================== */
+/* ==================== BOTONES ======================== */
+/* ===================================================== */
+
+/* Estilo base de los botones */
 .boton {
-    display: flex;
-    align-items: center;
-    margin: 10px;
-    cursor: pointer;
-    background-color: white;
-    border-radius: 10px;
-    text-align: center;
-    transition: all 0.3s ease;
+    display: flex;                 /* Flexbox */
+    align-items: center;           /* Centrado vertical */
+    margin: 10px;                  /* Espacio externo */
+    cursor: pointer;               /* Cursor de mano */
+    background-color: white;       /* Fondo blanco */
+    border-radius: 10px;           /* Bordes redondeados */
+    text-align: center;            /* Texto centrado */
+    transition: all 0.3s ease;     /* Transición suave */
 }
 
+/* Enlaces dentro del botón */
 .boton a {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 20px;
-    color: black;
-    text-decoration: none;
-    white-space: nowrap;
-    transition: color 0.3s ease;
-    border-radius: 10px;
+    display: flex;                 /* Flexbox */
+    align-items: center;           /* Centrado vertical */
+    gap: 8px;                      /* Espacio entre icono y texto */
+    padding: 10px 20px;            /* Espacio interno */
+    color: black;                  /* Texto negro */
+    text-decoration: none;         /* Quita subrayado */
+    white-space: nowrap;           /* Evita saltos de línea */
+    transition: color 0.3s ease;   /* Transición de color */
+    border-radius: 10px;           /* Bordes redondeados */
 }
 
+/* Iconos dentro del botón */
 .boton img {
-    width: 20px;
-    height: 20px;
-    flex-shrink: 0;
+    width: 20px;                   /* Ancho del icono */
+    height: 20px;                  /* Alto del icono */
+    flex-shrink: 0;                /* Evita que se reduzca */
 }
 
+/* Efecto hover del botón */
 .boton--hover:hover {
-    transform: scale(0.9);
-    background-color: rgb(255, 255, 253);
-    border-color: orange;
+    transform: scale(0.9);         /* Reduce tamaño al pasar el mouse */
+    background-color: rgb(255, 255, 253); /* Fondo muy claro */
+    border-color: orange;          /* Color decorativo */
 }
 
+/* ===================================================== */
+/* ================== TÍTULO PRINCIPAL ================= */
+/* ===================================================== */
 
+/* Contenedor del título principal */
 .principal-tittle {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  margin-top: 5%;
-
+  align-items: center;             /* Centrado horizontal */
+  justify-content: center;         /* Centrado vertical */
+  display: flex;                   /* Flexbox */
+  flex-direction: column;          /* Elementos en columna */
+  margin-top: 5%;                  /* Separación superior */
 }
 
+/* Título principal */
 .principal-tittle h1 {
-  font-weight: 400;
-  font-family:"SN Pro";
-  font-size: 2rem;
+  font-weight: 400;                /* Grosor medio */
+  font-family: "SN Pro";           /* Fuente personalizada */
+  font-size: 2rem;                 /* Tamaño del texto */
 }
 
+/* Subtítulo o descripción */
 .principal-tittle p {
-  font-family: "SN Pro", sans-serif;
-  font-weight: 200;
-  font-size: 1.3rem;
-  color: black;
-  margin-top: 1.5%;
+  font-family: "SN Pro", sans-serif; /* Fuente */
+  font-weight: 200;                 /* Texto liviano */
+  font-size: 1.3rem;                /* Tamaño del texto */
+  color: black;                     /* Color del texto */
+  margin-top: 1.5%;                 /* Separación superior */
 }

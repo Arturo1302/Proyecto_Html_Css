@@ -1,63 +1,88 @@
-/* Formulario de reporte */
+/* ===================================================== */
+/* ============== FORMULARIO DE REPORTE ================ */
+/* ===================================================== */
+
+/* Contenedor principal del formulario */
 .formulario-reporte {
-    font-family: "SN Pro", sans-serif;
-    width: 50%;
-    margin: 0px auto;
-    padding: 30px;
-    background-color:  rgba(217, 217, 217, 0.5);
-    border-radius: 12px;
+    font-family: "SN Pro", sans-serif;        /* Fuente principal */
+    width: 50%;                               /* Ocupa el 50% del ancho del contenedor padre */
+    margin: 0px auto;                         /* Centrado horizontal */
+    padding: 30px;                            /* Espacio interno */
+    background-color: rgba(217, 217, 217, 0.5); /* Fondo gris semitransparente */
+    border-radius: 12px;                      /* Bordes redondeados */
 }
 
-/* Etiquetas */
+/* ===================================================== */
+/* =================== ETIQUETAS ======================= */
+/* ===================================================== */
+
+/* Estilos para los labels del formulario */
 .formulario-reporte label {
-    display: block;
-    margin-left: 5px;
-    margin-bottom: 5px;
-    color: #000000;
-    font-weight: bold;
+    display: block;            /* Cada label ocupa una línea completa */
+    margin-left: 5px;          /* Separación leve a la izquierda */
+    margin-bottom: 5px;        /* Espacio debajo del label */
+    color: #000000;            /* Texto negro */
+    font-weight: bold;         /* Texto en negrita */
 }
 
-/* Inputs y textarea */
+/* ===================================================== */
+/* ============== INPUTS Y TEXTAREA ==================== */
+/* ===================================================== */
+
+/* Estilo general para inputs y textarea */
 .formulario-reporte input,
 .formulario-reporte textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 6px;
-    background: white;
+    width: 100%;               /* Ocupan todo el ancho disponible */
+    padding: 10px;             /* Espacio interno para el texto */
+    border: none;              /* Sin borde por defecto */
+    border-radius: 6px;        /* Bordes redondeados */
+    background: white;         /* Fondo blanco */
 }
 
-/* Textarea más alto */
+/* ===================================================== */
+/* =================== TEXTAREA ======================== */
+/* ===================================================== */
+
+/* Ajustes específicos para el textarea */
 .formulario-reporte textarea {
-    min-height: 120px;
-    resize: vertical; /
+    min-height: 120px;         /* Altura mínima */
+    resize: vertical;          /* Permite cambiar tamaño solo verticalmente */
 }
 
-/* Botón */
+/* ===================================================== */
+/* ==================== BOTÓN ========================== */
+/* ===================================================== */
+
+/* Botón de envío del formulario */
 .formulario-reporte button {
-    font-family: "SN Pro", sans-serif;
-    display: block;
-    width: 300px;
-    margin: 10px auto ;
-    padding: 12px;
-    background: #ff7f50;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
+    font-family: "SN Pro", sans-serif; /* Misma fuente del formulario */
+    display: block;                    /* Se comporta como bloque */
+    width: 300px;                      /* Ancho fijo */
+    margin: 10px auto;                 /* Centrado horizontal */
+    padding: 12px;                     /* Espacio interno */
+    background: #ff7f50;               /* Color naranja */
+    color: white;                      /* Texto blanco */
+    font-size: 18px;                   /* Tamaño del texto */
+    font-weight: bold;                 /* Texto en negrita */
+    border: none;                      /* Sin borde */
+    border-radius: 6px;                /* Bordes redondeados */
+    cursor: pointer;                   /* Cursor de mano */
 }
 
-/* Hover del botón */
+/* Efecto hover del botón */
 .formulario-reporte button:hover {
-    background: #ff6a3d;
+    background: #ff6a3d;               /* Naranja más oscuro al pasar el mouse */
 }
 
+/* ===================================================== */
+/* ============== CONTENEDOR GENERAL =================== */
+/* ===================================================== */
+
+/* Contenedor que envuelve el formulario */
 .report-container {
-    font-family: "SN Pro", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    font-family: "SN Pro", sans-serif; /* Fuente general */
+    display: flex;                     /* Layout flexible */
+    flex-direction: column;            /* Elementos en columna */
+    align-items: center;               /* Centrado horizontal */
+    justify-content: center;           /* Centrado vertical */
 }
