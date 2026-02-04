@@ -1,140 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--METADATOS Y CONFIGURACIÓN -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kario</title>
+    
+    <!-- FAVICONS - Iconos del sitio para diferentes dispositivos -->
     <link rel="icon" type="image/png" href="../media/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="./media/favicon/favicon.svg" />
     <link rel="shortcut icon" href="./media/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="./media/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="./media/favicon/site.webmanifest" />
+    <!-- ============================================-->
     <link rel="stylesheet" href="../css/principal.css">
     <link rel="stylesheet" href="../css/añadir.css">
+    <!-- ============================================-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
+
 <body> 
+    <!-- Contenedor principal de toda la página -->
     <div class="container">   
+        
+        <!-- ============================================
+             HEADER - BARRA DE NAVEGACIÓN SUPERIOR
+             ============================================ -->
         <header>    
             <div class="barra_superior">
                 <nav class="tabla_contenido">
+                    
+                    <!-- Lista de botones de navegación principal -->
                     <ul>
-                        <!-- Boton de Añadir -->
+                        <!-- Botón para añadir nuevos indicadores -->
                         <li class="boton boton--hover">
                             <a href="Anadir.html">
-                                <img src="../media/Group 3.svg"  alt="Agregar">
+                                <img src="../media/Group 3.svg" alt="Agregar">
                                 Añadir
                             </a>
                         </li>
-                        <!-- Boton de refrescar -->
+                        
+                        <!-- Botón para refrescar/actualizar la vista -->
                         <li class="boton boton--hover">
                             <a href="Anadir.html">
-                                <img src="../media/Icon open-reload.svg"  alt="Refrescar">
+                                <img src="../media/Icon open-reload.svg" alt="Refrescar">
                                 Refrescar
                             </a>
                         </li>
-                        <!-- Boton de eliminar -->
+                        
+                        <!-- Botón para eliminar indicadores -->
                         <li class="boton boton--hover">
                             <a href="Eliminar.html">
-                                <img src="../media/Icon material-delete-forever.svg"  alt="Eliminar">
+                                <img src="../media/Icon material-delete-forever.svg" alt="Eliminar">
                                 Eliminar
                             </a>
                         </li>
-                        <!-- Boton con el logo de la empresa -->
+                        
+                        <!-- Logo central de la empresa que funciona como botón de inicio -->
                         <li class="boton--hover">
                             <a href="Principal.html">
                                 <img class="logo-middle" src="../media/kario sin kairo.svg" alt="Inicio">
                             </a>
                         </li>
-                        <!-- Boton de Reportar -->
+                        
+                        <!-- Botón para reportar bugs o problemas -->
                         <li class="boton boton--hover">
                             <a href="Reportes.html">
-                                <img src="../media/Icon material-bug-report.svg"  alt="Reportar">
+                                <img src="../media/Icon material-bug-report.svg" alt="Reportar">
                                 Reportar
                             </a>
                         </li>
                     
-                        <!-- Boton de ayuda -->
+                        <!-- Botón de ayuda para el usuario -->
                         <li class="boton boton--hover">
                             <a href="Ayuda.html">
-                                <img src="../media/icono_pregunta.svg"  alt="Ayuda">
+                                <img src="../media/icono_pregunta.svg" alt="Ayuda">
                                 Ayuda
                             </a>
                         </li>
                     </ul>
-                    <!-- Foto del usuario -->
-                    <!-- Logo de configuracion y notificaciones -->
+                    
+                    <!-- ============================================
+                         SECCIÓN DERECHA DEL HEADER
+                         Iconos de configuración, notificaciones y perfil
+                         ============================================ -->
                     <div class="footer_superior">
+                        <!-- Icono de configuración -->
                         <div class="boton--hover">
-                        <img src="../media/Icon ionic-ios-settings.svg"   alt="Buscar">
+                            <img src="../media/Icon ionic-ios-settings.svg" alt="Buscar">
+                            <!-- NOTA: El alt dice "Buscar" pero debería ser "Configuración" -->
                         </div>
+                        
+                        <!-- Icono de notificaciones -->
                         <div class="boton--hover">
-                        <img src="../media/Icon material-notifications-active.svg" alt="Notificaciones">
+                            <img src="../media/Icon material-notifications-active.svg" alt="Notificaciones">
                         </div>
 
+                        <!-- Foto de perfil del usuario (clickeable) -->
                         <div class="boton--hover">
                             <a href="perfil.html">
                                 <img src="../media/pp.png" width="40" alt="Perfil Usuario">
                             </a>
                         </div>
                     </div> 
-
-
                 </nav>
-                
             </div>
         </header>
 
+        <!-- ============================================
+             SECCIÓN PRINCIPAL - FORMULARIO DE AÑADIR INDICADORES
+             ============================================ -->
+        <main>
         <section class="seccion_titulo">
 
+            <!-- Título de la página -->
             <section class="tittle">
-                <h1>Añadir Indicadores </h1> 
+                <h1>Añadir Indicadores</h1> 
             </section>
 
+            <!-- Contenedor del formulario -->
             <div class="add-container">
                 <section class="add-forms">
                     <form>
+                        <!-- ============================================
+                             PRIMERA FILA DEL FORMULARIO
+                             Campos: Indicador, Categoría, Área, Descripción
+                             ============================================ -->
                         <div class="primera-fila">
-                                <label>Nuevo indicador:</label>
-                                <input id="nuevo-indicador"type="text" required>
-                            
-                                <label>Categoría: </label>
-                                <input id="categoria"type="text" required>
-                                 
-                                <label>Área: </label>
-                                <input id="area"type="text" required> 
-                            
-                                <label>Descripción:</label>
-                                <input id="descripcion" required>  
+                            <!-- Campo para nombre del nuevo indicador -->
+                            <label>Nuevo indicador:</label>
+                            <input id="nuevo-indicador" type="text" required>
+                        
+                            <!-- Campo para categoría del indicador -->
+                            <label>Categoría:</label>
+                            <input id="categoria" type="text" required>
+                             
+                            <!-- Campo para área a la que pertenece -->
+                            <label>Área:</label>
+                            <input id="area" type="text" required> 
+                        
+                            <!-- Campo para descripción del indicador -->
+                            <label>Descripción:</label>
+                            <input id="descripcion" required>  
                         </div>
 
-                        <div class ="fechas">
+                        <!-- ============================================
+                             SEGUNDA FILA - FECHAS
+                             Fecha de inicio y finalización
+                             ============================================ -->
+                        <div class="fechas">
+                            <!-- Campo de fecha de inicio -->
                             <label>Fecha de Inicio</label>
-                            <input id="fecha-box" type="date" required>
+                            <input class="fecha-box" type="date" required>
+                            
+                            <!-- Campo de fecha de finalización -->
                             <label>Fecha de Finalizacion</label>
-                            <input id="fecha-box" type="date" required>
-                        </div>
-                        <div class ="tercerafila">
-                            <label>Formula</label>
-                            <input id="fecha-box" type="text" required>
-                            <label>Frecuencia</label>
-                            <input id="fecha-box" type="number" required>
-                            <label>Cumplimiento</label>
-                            <input id="fecha-box" type="text" required>
+                            <input class="fecha-box" type="date" required>
                         </div>
                         
+                        <!-- ============================================
+                             TERCERA FILA
+                             Campos: Fórmula, Frecuencia, Cumplimiento
+                             ============================================ -->
+                        <div class="tercerafila">
+                            <!-- Campo para fórmula de cálculo -->
+                            <label>Formula</label>
+                            <input class="fecha-box" type="text" required>
+                            
+                            <!-- Campo numérico para frecuencia -->
+                            <label>Frecuencia</label>
+                            <input class="fecha-box" type="number" required>
+                            
+                            <!-- Campo para porcentaje de cumplimiento -->
+                            <label>Cumplimiento</label>
+                            <input class="fecha-box" type="text" required>
+                        </div>
+                        
+                        <!-- ============================================
+                             BOTÓN DE ENVÍO DEL FORMULARIO
+                             ============================================ -->
                         <div class="boton-container">
-                            <button type="submit" href="Principal.html" class="boton-login">Finalizar</button>
+                            <!-- Botón para enviar el formulario -->
+                            <a type="submit" href="Principal.html" class="boton-login">Finalizar</a>
                         </div>
                     </form>
                 </section>
-
-
             </div>
         </section>
-
+        </main>
     </div>
 </body>
 </html>
