@@ -1,6 +1,6 @@
 # KARIO Media - Panel de Indicadores
 
-Este es un proyecto web para gestionar indicadores de proyectos. Básicamente es un panel donde puedes ver, añadir y eliminar indicadores con toda su info: fechas, categorías, progreso, etc. Basandonos en las ideas ilustrativas del cliente: https://www.figma.com/proto/0NKvCyMaX4G4iGAPhfosvk/KARIO?node-id=52-3&p=f&t=a8vsPJUi5ixQNbHw-1&scaling=contain&content-scaling=fixed&page-id=0%3A1
+Este es un proyecto web para gestionar indicadores de proyectos. Básicamente es un panel donde puedes ver, añadir y eliminar indicadores con toda su info: fechas, categorías, progreso, etc. Basandonos en las ideas ilustrativas del cliente: https://www.figma.com/proto/0NKvCyMaX4G4iGAPhfosvk/KARIO?node-id=61-3&p=f&t=KvWlqGM3AA7O0r7b-1&scaling=contain&content-scaling=fixed&page-id=0%3A1
 
 ## Qué hace esto?
 
