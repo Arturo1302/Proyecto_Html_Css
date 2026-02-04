@@ -56,8 +56,9 @@
 /* Botón de envío del formulario */
 .formulario-reporte button {
     font-family: "SN Pro", sans-serif; /* Misma fuente del formulario */
-    display: block;                    /* Se comporta como bloque */
-    width: 300px;                      /* Ancho fijo */
+    display: grid;                    /* Se comporta como bloque */
+    grid-template-columns: 1fr;      /* Una sola columna */
+    width: 50%;                      /* Ancho fijo */
     margin: 10px auto;                 /* Centrado horizontal */
     padding: 12px;                     /* Espacio interno */
     background: #ff7f50;               /* Color naranja */

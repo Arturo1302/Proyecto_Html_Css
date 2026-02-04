@@ -60,7 +60,7 @@
     font-family: "SN Pro", sans-serif;
     font-size: 20px;            /* Tamaño de fuente grande para visibilidad */
     font-weight: bold;          /* Texto en negrita para énfasis */
-    width: 300px;               /* Ancho fijo del botón */
+    width: 50%;               /* Ancho fijo del botón */
     margin: 20px auto;          /* Centrado horizontal con margen superior */
     padding: 12px;              /* Espaciado interno para hacer el botón más grande */
     background: #ff6633;        /* Color naranja corporativo de Kario */
