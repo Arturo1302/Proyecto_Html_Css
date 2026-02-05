@@ -65,3 +65,127 @@
     font-weight: 400;
     transition: all 0.3s ease;
 }
+
+@media (max-width: 768px) {
+    
+    /* BARRA SUPERIOR */
+    .barra_superior {
+        flex-direction: column;      /* Cambia a columna en tablet */
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    /* NAVEGACIÓN */
+    .tabla_contenido {
+        margin-left: 0;              /* Elimina el margen izquierdo */
+        width: 100%;
+        overflow-x: auto;            /* Permite scroll horizontal */
+        padding-bottom: 5px;
+    }
+    
+    .tabla_contenido ul {
+        gap: 2rem;                   /* Reduce espacio entre botones */
+        flex-wrap: nowrap;
+        min-width: max-content;
+    }
+    
+    .boton {
+        margin: 5px;
+    }
+    
+    .boton a {
+        padding: 8px 15px;
+        font-size: 0.85rem;
+    }
+    
+    .boton img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .logo-middle {
+        width: 30px;
+        height: 30px;
+    }
+    
+    /* FOOTER SUPERIOR */
+    .footer_superior {
+        width: auto;                 /* Cambia de porcentaje a auto */
+        margin-left: 0;              /* Elimina el margin-left auto */
+        justify-content: center;     /* Centra los iconos */
+        gap: 20px;
+        padding: 10px 0;
+    }
+    
+    .footer_superior img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    /* TÍTULO PRINCIPAL */
+    .principal-tittle,
+    .seccion-titulo {
+        margin-top: 5%;
+        padding: 0 15px;
+    }
+    
+    .principal-tittle h1,
+    .seccion-titulo h1 {
+        font-size: 1.5rem;
+    }
+    
+    .principal-tittle p,
+    .seccion-titulo p {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    /* TABLA PRINCIPAL */
+    .Principal-table {
+        overflow-x: auto;            /* Scroll horizontal */
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    
+    .Principal-table table {
+        border-spacing: 20px 8px;
+        font-size: 0.8rem;
+        min-width: 800px;            /* Ancho mínimo para mantener estructura */
+    }
+    
+    .table-tittle td {
+        font-size: 0.75rem;
+        padding: 8px 5px;
+    }
+    
+    .Border-designed td {
+        padding: 8px 5px;
+        font-size: 0.75rem;
+    }
+    
+    .progress-icon {
+        height: 35px;
+        width: 35px;
+    }
+    
+    .checkbox-table {
+        width: 18px;
+        height: 18px;
+    }
+    
+    /* BOTÓN FINAL */
+    .boton-container {
+        margin-top: 5%;
+        padding: 0 15px;
+    }
+    
+    .boton-login,
+    .boton-eliminar {
+        padding: 12px 40px;
+        font-size: 0.9rem;
+        width: 90%;
+        max-width: 300px;
+    }
+}
+

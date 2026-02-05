@@ -161,24 +161,6 @@ p {
 
 @media (max-width: 768px) {
 
-    /* HEADER */
-    .barra_superior {
-        height: auto;
-        padding: 10px 0;
-    }
-
-    .tabla_contenido ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .footer_superior {
-        width: auto;
-        padding: 10px;
-        justify-content: center;
-        gap: 15px;
-    }
 
     /* FORMULARIO */
     .add-container {
