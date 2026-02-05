@@ -57,9 +57,17 @@
 
 /* Estilos del encabezado H1 */
 h1 {
-    font-weight: 400;         /* Peso de fuente normal (no negrita) */
+    font-weight: 600;         /* Peso de fuente normal (no negrita) */
     font-family: "SN Pro";
     font-size: 2rem;          /* Tamaño de fuente responsivo (32px aprox) */
+}
+
+p {
+    font-weight: 300;         /* Peso de fuente normal (no negrita) */
+    font-family: "SN Pro";
+    font-size: 1.5rem;          /* Tamaño de fuente responsivo (32px aprox) */
+    margin-top: 1%;
+
 }
 
 /* ============================================
@@ -84,11 +92,13 @@ h1 {
 /* Campo de categoría */
 #categoria {
     width: 40%;
+    border: none;
 }
 
 /* Campo de área - el más estrecho */
 #area {
     width: 30%;
+    border: none;
 }
 
 /* ============================================
@@ -147,4 +157,66 @@ h1 {
 .boton-login:hover {
     background-color: rgb(207, 55, 0); /* Color más oscuro al pasar el mouse */
     font-size: medium;
+}
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .barra_superior {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .tabla_contenido ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .footer_superior {
+        width: auto;
+        padding: 10px;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* FORMULARIO */
+    .add-container {
+        width: 95%;
+        margin-top: 8%;
+    }
+
+    .primera-fila,
+    .fechas,
+    .tercerafila {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Inputs ocupan todo el ancho */
+    .add-forms input,
+    select,
+    .fecha-box,
+    #nuevo-indicador,
+    #categoria,
+    #area,
+    #descripcion {
+        width: 100%;
+    }
+
+    /* Botón */
+    .boton-login {
+        padding: 14px 50px;
+    }
+
+    /* Títulos */
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+        padding: 0 10px;
+        text-align: center;
+    }
 }

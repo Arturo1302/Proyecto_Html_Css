@@ -118,6 +118,7 @@
             <!-- Título de la página -->
             <section class="tittle">
                 <h1>Añadir Indicadores</h1> 
+                <p>Selecciona las casillas a la derecha para elegir el contenido a eliminar</p>
             </section>
 
             <!-- Contenedor del formulario -->
@@ -135,12 +136,20 @@
                         
                             <!-- Campo para categoría del indicador -->
                             <label>Categoría:</label>
-                            <input id="categoria" type="text" required>
-                             
+                            <select id="categoria" type="" required>
+                                <option>Baja</option>
+                                <option>Media</option>
+                                <option>Alta</option>
+                            </select>
                             <!-- Campo para área a la que pertenece -->
                             <label>Área:</label>
-                            <input id="area" type="text" required> 
-                        
+                            <select id="area" type="text" required> 
+                                <option>Marketing</option>
+                                <option>Diseño</option>
+                                <option>Developers</option>
+                                <option>Gerencia</option>
+                                <option>Produccion</option>
+                            </select>
                             <!-- Campo para descripción del indicador -->
                             <label>Descripción:</label>
                             <input id="descripcion" required>  
@@ -175,7 +184,7 @@
                             
                             <!-- Campo para porcentaje de cumplimiento -->
                             <label>Cumplimiento</label>
-                            <input class="fecha-box" type="text" required>
+                            <input type="number" name="cumplimiento" class="fecha-box" min="0" max="100" step="10"  required />
                         </div>
                         
                         <!-- ============================================
