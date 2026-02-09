@@ -10,9 +10,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../media/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="../media/favicon/site.webmanifest" />
     <link rel="stylesheet" href="../css/principal.css">
-    <link rel="stylesheet" href="../css/perfil.css">
     <link rel="stylesheet" href="../css/Panel-de-bienvenida.css">
     <link rel="stylesheet" href="../css/animation-index.css">
+    <link rel="stylesheet" href="../css/nosotros.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
@@ -22,16 +22,17 @@
     <!-- ============================================-->
     <!--        CONTENEDOR PRINCIPAL                 -->
     <!-- ============================================-->
-    <!-- Contenedor principal que envuelve toda la página de perfil -->
+    <!-- Contenedor principal que envuelve toda la página del panel de indicadores -->
     <div class="container">  
         
-        <!-- ENCABEZADO CON BARRA DE NAVEGACIÓN PRINCIPAL -->
+        <!-- ENCABEZADO CON NAVEGACIÓN Y TÍTULO -->
         <header>   
+            <!-- BARRA DE NAVEGACIÓN SUPERIOR -->
             <div class="barra_superior">
                 <nav class="tabla_contenido">
                     <!-- MENÚ DE NAVEGACIÓN PRINCIPAL -->
                     <ul>
-                        <!-- BOTÓN AÑADIR: Permite agregar nuevos indicadores o elementos al sistema -->
+                        <!-- BOTÓN AÑADIR: Permite agregar nuevos indicadores al sistema -->
                         <li class="boton boton--hover">
                             <a href="Anadir.html">
                                 <img src="../media/Group 3.svg" alt="Agregar">
@@ -39,15 +40,15 @@
                             </a>
                         </li>
                         
-                        <!-- BOTÓN REFRESCAR: Actualiza el contenido de la página actual -->
+                        <!-- BOTÓN REFRESCAR: Actualiza los datos de la tabla -->
                         <li class="boton boton--hover">
-                            <a href="perfil.html">
+                            <a href=>
                                 <img src="../media/Icon open-reload.svg" alt="Refrescar">
                                 Refrescar
                             </a>
                         </li>
                         
-                        <!-- BOTÓN ELIMINAR: Navega a la página de eliminación de elementos -->
+                        <!-- BOTÓN ELIMINAR: Navega a la página de eliminación de indicadores -->
                         <li class="boton boton--hover">
                             <a href="Eliminar.html">
                                 <img src="../media/Icon material-delete-forever.svg" alt="Eliminar">
@@ -55,14 +56,14 @@
                             </a>
                         </li>
                         
-                        <!-- LOGO DE LA EMPRESA: Enlace de retorno a la página principal/dashboard -->
+                        <!-- LOGO DE LA EMPRESA: Enlace de retorno a la página principal -->
                         <li class="boton--hover">
                             <a href="Principal.html">
                                 <img class="logo-middle" src="../media/kario sin kairo.svg" alt="Inicio">
                             </a>
                         </li>
                         
-                        <!-- BOTÓN REPORTAR: Acceso a la sección de reportes de bugs o problemas -->
+                        <!-- BOTÓN REPORTAR: Acceso a la sección de reportes de bugs -->
                         <li class="boton boton--hover">
                             <a href="Reportes.html">
                                 <img src="../media/Icon material-bug-report.svg" alt="Reportar">
@@ -70,7 +71,7 @@
                             </a>
                         </li>
                     
-                        <!-- BOTÓN AYUDA: Acceso a la sección de ayuda y soporte técnico -->
+                        <!-- BOTÓN AYUDA: Acceso a la sección de ayuda y soporte -->
                         <li class="boton boton--hover">
                             <a href="Ayuda.html">
                                 <img src="../media/icono_pregunta.svg" alt="Ayuda">
@@ -79,22 +80,20 @@
                         </li>
                         <li class="boton boton--hover">
                             <a href="nosotros.html">
-                                <img src="../media/icono_pregunta.svg" alt="Ayuda">
+                                <img src="../media/user.svg" alt="Ayuda">
                                 Nosotros
                             </a>
                         </li>
-
                     </ul>
                     
-                    <!-- SECCIÓN DERECHA DEL HEADER: Herramientas de usuario -->
+                    <!-- SECCIÓN DERECHA DEL HEADER: Herramientas del usuario -->
                     <div class="footer_superior">
-                        <!-- BOTÓN CONFIGURACIÓN: Acceso a configuraciones del sistema -->
-                        <!-- NOTA: El atributo alt dice "Buscar" pero debería decir "Configuración" -->
+                        <!-- BOTÓN CONFIGURACIÓN: Acceso a ajustes del sistema -->
                         <div class="boton--hover">
-                            <img src="../media/Icon ionic-ios-settings.svg" alt="Buscar">
+                            <img src="../media/Icon ionic-ios-settings.svg" alt="configuracion">
                         </div>
                         
-                        <!-- BOTÓN NOTIFICACIONES: Muestra alertas y avisos del usuario -->
+                        <!-- BOTÓN NOTIFICACIONES: Muestra alertas y avisos -->
                         <div class="boton--hover">
                             <img src="../media/Icon material-notifications-active.svg" alt="Notificaciones">
                         </div>
@@ -108,43 +107,38 @@
                     </div> 
                 </nav>
             </div>
-        </header>
-
-        <!-- CONTENEDOR PRINCIPAL DEL PERFIL DE USUARIO -->
-        <div class="profile-container">
-            <!-- CAJA DE INFORMACIÓN DEL PERFIL -->
-            <div class="profile-box">
-                
-                <!-- SECCIÓN SUPERIOR: Foto y datos básicos del usuario -->
-                <div class="photo">
-                    <!-- Foto de perfil del usuario (versión de alta resolución @2x) -->
-                    <img src="../media/pp@2x.png">
-                    
-                    <!-- Nombre completo del usuario -->
-                    <h1>Pedro Felipe Gómez Bonilla</h1>
-                    
-                    <!-- Rol o tipo de usuario en el sistema -->
-                    <h2>Usuario Administrador</h2>
+            
+            <!-- SECCIÓN DE TÍTULO PRINCIPAL DE LA PÁGINA -->
+            <div class="principal-tittle">
+                <!-- Título descriptivo del panel -->
+                <h1>Nuestros Trabajadores</h1>
+            </div><br><br><br><br>
+            <div class="pricing-container">
+                <div class="pricing-card featured">
+                    <h2 class="plan-name">Arturo Ojeda Tarazona</h2>
+                    <h3 class="plan-title">Ingeniero de Sistemas</h3>
+                    <img src="../media/user.svg" width="150" alt="Foto de Arturo Ojeda">
+                    <p class="duration">Arturo se ha consolidado como uno de nustros lideres en el area de desarrollo al guiar a su equipo de trabjo y aportar grandement en proyectos</p>
                 </div>
-                
-                <!-- SECCIÓN DE NAVEGACIÓN DEL PERFIL: Menú de opciones -->
-                <div class="informacion1">
-                    <!-- OPCIÓN 1: Ver los indicadores asociados al usuario -->
-                    <h3 class="text">Mis indicadores</h3>
-                    
-                    <!-- OPCIÓN 2: Acceder a información personal del usuario -->
-                    <h3 class="text dates">Datos personales</h3>
-                    
-                    <!-- OPCIÓN 3: Configurar y editar el perfil -->
-                    <h3 class="text">Configurar perfil</h3>
-                    
-                    <!-- OPCIÓN 4: Cerrar sesión y volver a la página de inicio de sesión -->
-                    <h3 class="text close-profile">
-                        <a class="close" href="../index.html">Cerrar perfil</a>
-                    </h3>
+                <div class="pricing-card featured">
+                    <h2 class="plan-name"> Juan Esteban Gomez</h2>
+                    <h3 class="plan-title">Ingeniero de Software</h3>
+                    <img src="../media/user.svg" width="150" alt="Foto de Juan Pablo Gomez">
+                    <p class="duration">Juan Pablo es un profesional especializado en diseñar, crear, probar y mantener aplicaciones, sistemas y programas informáticos. Utilizan lenguajes de programación para solucionar problemas, mejorando procesos existentes o creando soluciones nuevas </p>
+                </div>      
+                 <div class="pricing-card featured">
+                    <h2 class="plan-name">Maria fernanda Perez</h2>
+                    <h3 class="plan-title">Marketing y Publicidad</h3>
+                    <img src="../media/user.svg" width="150" alt="Foto de Maria fernanda Perez">
+                    <p class="duration">Es la estratega creativa y analítica responsable de promover productos o servicios, aumentar la visibilidad de la marca y potenciar las ventas, gestionar redes sociales, SEO y contenido, buscando fidelizar clientes y adaptarse a las tendencias actuales.</p>
+                </div>
+
+                <div class="pricing-card featured">
+                    <h2 class="plan-name">Andres Felipe Castellanos</h2>
+                    <h3 class="plan-title">Desarrollador Web</h3>
+                    <img src="../media/user.svg" width="150" alt="Foto de Andres Castellanos">
+                    <p class="duration">Andres es un desarrollador web con más de 5 años de experiencia en el desarrollo de aplicaciones web. Es experto en HTML, CSS, JavaScript y frameworks como React y Angular. Ha trabajado en proyectos para clientes de diversos sectores, desde startups hasta grandes empresas.</p>
                 </div>
             </div>
-        </div>
- 
-    </div>   
-</body>
+        </header>
+        
