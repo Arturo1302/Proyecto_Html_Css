@@ -32,7 +32,7 @@
 }
 
 .pricing-card.featured {
-    background: linear-gradient(135deg, #ffffff 0%, #f07714 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #ffd4b0 100%);
     color: white;  
     z-index: 1;
     border-radius: 20px;
@@ -46,7 +46,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     color: black;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .pricing-card.featured .plan-title {
@@ -73,7 +73,7 @@
 
 .pricing-card.featured .duration {
     padding-top: 30%;
-    color: rgba(255, 255, 255, 0.9);
+    color: black;
     text-align: justify;
 }
 
@@ -92,7 +92,7 @@
 
 
 .pricing-card.featured .features li {
-    color: white;
+    color: black;
 }
 
 
