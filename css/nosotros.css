@@ -1,0 +1,100 @@
+* {
+    margin: 0%;
+    font-family: "SN Pro", sans-serif;
+}
+
+
+
+/* Contenedor principal del perfil */
+.profile-box {
+    width: 85%;                                 /* Ancho del 25% del contenedor padre */
+    background-color: rgba(217, 217, 217, 0.5);   /* Fondo gris con transparencia */
+    border-radius: 20px;                          /* Bordes redondeados */
+    display: grid;                                /* Usa CSS Grid */
+    grid-gap: 20px;                               /* Espacio entre elementos */
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+        "house wilson lil foreman ";                                   /* Definición de áreas del grid */
+    padding: 20px;                                /* Espaciado interno */
+    margin-top: 3%;                               /* Separación superior */
+    justify-content: center;                      /* Centra horizontalmente */
+    align-items: center;                          /* Centra verticalmente */
+}
+
+
+
+/* Contenedor interno del perfil */
+.profile-container {
+    display: flex;
+    flex-direction: column;       /* Elementos en columna */
+    align-items: center;          /* Centrado horizontal */
+}
+
+
+
+
+/* cargos */
+h2 {
+    font-weight: 500;
+    color: rgb(247, 64, 18);       /* Color naranja/rojo */
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+/* Diseño responsive para pantallas pequeñas */
+@media (max-width: 600px) {
+    .profile-box {
+        display: flex;
+        flex-direction: column;   /* Cambia grid por columna */
+    }
+}
+
+.titulo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.tittle {
+    font-size: 40px;
+    font-weight:700;
+    margin-top: 1%;
+    color: rgb(221, 59, 0);
+}
+
+p{
+    font-size: 20px;
+}
+.profile-img{
+    width: 100%;
+    border-radius: 5%;
+}
+.profile-img4 {
+    width: 95%;
+    border-radius: 5%;
+}
+
+.house {
+    text-align: center;
+    grid-area: house;
+}
+
+.wilson {
+    text-align: center;
+    grid-area: wilson
+}
+.lil {
+    text-align: center;
+    grid-area: lil;
+
+}
+
+.foreman {
+    text-align: center;
+    grid-area: foreman;
+}
+
